@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class InputSystem : MonoBehaviour
 {
     private Touch theTouch;
-    private Vector2 startPosition, endPosition;
+    private Vector2 startPosition, endPosition, touchToWorldPos;
+
+    private Camera _camera;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _camera = Camera.main;
     }
 
     // Update is called once per frame
@@ -26,6 +28,17 @@ public class InputSystem : MonoBehaviour
                 var y = startPosition.y - endPosition.y;
                 if ((Mathf.Abs(x) == 0 && Mathf.Abs(y) == 0) && theTouch.phase == TouchPhase.Ended) {
                     Debug.Log("Just Tapped");
+                    touchToWorldPos = _camera.ScreenToWorldPoint(endPosition);
+                    
+                    RaycastHit2D info = Physics2D.Raycast(touchToWorldPos, _camera.transform.forward, Mathf.Infinity);
+                    Debug.LogError($"Distance {info.distance}");
+                    Debug.DrawRay(touchToWorldPos, _camera.transform.forward, Color.red);
+                    
+                    if (info.collider != null)
+                    {
+                        GameObject touchedObject = info.transform.gameObject;
+                        Debug.LogError($"Touched Object: {touchedObject}");
+                    }
                 }
                 else if (Mathf.Abs(x) > Mathf.Abs(y)){
                     Debug.Log("Moved in x");
