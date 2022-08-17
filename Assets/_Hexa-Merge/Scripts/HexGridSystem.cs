@@ -10,7 +10,7 @@ public class HexGridSystem : MonoBehaviour
 
     [SerializeField] private GameObject _HexNodePrefab;
     
-    private List<List<Vector2>> nodes = new List<List<Vector2>>();
+    private List<List<Node>> nodes = new List<List<Node>>();
     
     private Vector2 position = Vector2.zero;
      // Start is called before the first frame update
@@ -23,16 +23,17 @@ public class HexGridSystem : MonoBehaviour
     private void GridLayoutGenerator()
     {
         int k = 0, size = _GridSize;
+        int index = 0;
 
         for (int r = 0; r < _GridSize; r++)
         {
             size = (r % 2 == 1) ? _GridSize - 1 : _GridSize;
-            nodes.Add(new List<Vector2>());
+            nodes.Add(new List<Node>());
             for (int i = 0; i < size; i++)
             {
-                nodes[r].Add(new Vector2(i + k, r));
+                var pos = new Vector2(i + k, r);
+                nodes[r].Add(new Node(pos, index++));
             }
-
             if ((r + 1) % 2 == 0)
                 k--;
         }
@@ -52,5 +53,22 @@ public class HexGridSystem : MonoBehaviour
             }
             y -= 0.866f;
         }
+    }
+}
+
+public class Node
+{
+    private Vector2 position;
+    private int index;
+
+    public Node(Vector2 pos, int index)
+    {
+        this.position = pos;
+        this.index = index;
+    }
+
+    public void PrintNode()
+    {
+        Debug.Log($"Position: {this.position}\nIndex: {this.index}");
     }
 }
