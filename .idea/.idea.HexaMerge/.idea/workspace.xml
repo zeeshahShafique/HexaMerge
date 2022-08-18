@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IInputState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IInputState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DQUW8YVEeLP6FvpWwlyOD9GNzw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
