@@ -1,50 +1,67 @@
-using System;
+using System.Data.Common;
+using _Hexa_Merge.Scripts.Input;
+using _Hexa_Merge.Scripts.Input.Interfaces;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.WSA;
 
-public class InputSystem : MonoBehaviour
+public class InputSystem : MonoBehaviour, IInputState
 {
-    private Touch theTouch;
-    private Vector2 startPosition, endPosition, touchToWorldPos;
+    private Vector2 _startPosition, _endPosition;
+    private InputState _state;
 
-    private Camera _camera;
-    private RaycastHit2D _hitInfo;
-    private GameObject _tile;
+    [SerializeField] private TileController TileController;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _camera = Camera.main;
+        ChangeState(new IdleInputState(this, TileController, TileController));
     }
 
     // Update is called once per frame
     private void Update()
     {
         if (Input.touchCount <= 0) return;
-        theTouch = Input.GetTouch(0);
-        if (theTouch.phase == TouchPhase.Began){
-            startPosition = theTouch.position;
-            touchToWorldPos = _camera.ScreenToWorldPoint(startPosition);
-            _hitInfo = Physics2D.Raycast(touchToWorldPos, _camera.transform.forward, Mathf.Infinity);
-            if(!_hitInfo.collider) return;
-        }
-        if (!_hitInfo.collider.CompareTag("Tile")) return;
-        _tile = _hitInfo.transform.gameObject;
-        if (theTouch.phase != TouchPhase.Moved && theTouch.phase != TouchPhase.Ended) return;
-        endPosition = theTouch.position;
-        var x = startPosition.x - endPosition.x;
-        var y = startPosition.y - endPosition.y;
-        if ((Mathf.Abs(x) == 0 && Mathf.Abs(y) == 0) && theTouch.phase == TouchPhase.Ended)
+        var touch = Input.GetTouch(0);
+        switch (touch.phase)
         {
-            Debug.Log("Just Tapped");
-            // _tile.transform.localEulerAngles += Vector3.forward * 60;
+            case TouchPhase.Began:
+                _state.Begin(touch);
+                break;
+            case TouchPhase.Stationary:
+            case TouchPhase.Moved:
+                _state.Move(touch);
+                break;
+            case TouchPhase.Ended:
+                _state.End(touch);
+                break;
+            default:
+                break;
         }
-        else if (Mathf.Abs(x) > Mathf.Abs(y))
-        {
-            Debug.Log("Moved in x");
-        }
-        else
-        {
-            Debug.Log("Moved in y");
-        }
+        // if (Input.touchCount > 0){
+        //     theTouch = Input.GetTouch(0);
+        //     if (theTouch.phase == TouchPhase.Began){
+        //         startPosition = theTouch.position;
+        //     }
+        //     else if (theTouch.phase == TouchPhase.Moved || theTouch.phase == TouchPhase.Ended){
+        //         endPosition = theTouch.position;
+        //         var x = startPosition.x - endPosition.x;
+        //         var y = startPosition.y - endPosition.y;
+        //         if ((Mathf.Abs(x) == 0 && Mathf.Abs(y) == 0) && theTouch.phase == TouchPhase.Ended) {
+        //             Debug.Log("Just Tapped");
+        //         }
+        //         else if (Mathf.Abs(x) > Mathf.Abs(y)){
+        //             Debug.Log("Moved in x");
+        //         }
+        //         else {
+        //             Debug.Log("Moved in y");
+        //         }
+        //     }
+        // }
+    }
+
+    public void ChangeState(InputState state)
+    {
+        _state = state;
     }
 }
