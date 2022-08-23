@@ -5,17 +5,19 @@ namespace _Hexa_Merge.Scripts.Input
 {
     public class InputState
     {
-        public IInputState Listener;
+        protected IInputState _Listener;
+        protected ITap _Tap;
+        protected IDrag _Drag;
 
-        public InputState(IInputState listener)
+        protected InputState(IInputState listener, ITap tap, IDrag drag)
         {
-            Listener = listener;
-            Debug.LogError($"Current Type: {GetType()}");
+            _Listener = listener;
+            _Tap = tap;
+            _Drag = drag;
         }
         
-        public InputState(){}
-        public virtual void Begin(){}
-        public virtual void Move(){}
-        public virtual void End(){}
+        public virtual void Begin(Touch touch){}
+        public virtual void Move(Touch touch){}
+        public virtual void End(Touch touch){}
     }
 }

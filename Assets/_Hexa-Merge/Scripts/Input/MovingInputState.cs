@@ -1,30 +1,25 @@
 using _Hexa_Merge.Scripts.Input.Interfaces;
+using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace _Hexa_Merge.Scripts.Input
 {
     public class MovingInputState : InputState
     {
-        public override void Begin()
+        public override void Move(Touch touch)
         {
-            base.Begin();
-            // TODO: Implement DragStart functionality here.
-        }
-
-        public override void Move()
-        {
-            base.Move();
+            _Drag.OnDrag(touch);
             // TODO: Implement DragMove functionality here.
         }
 
-        public override void End()
+        public override void End(Touch touch)
         {
-            base.End();
-            Listener.ChangeState(new IdleInputState(Listener));
+            _Drag.OnDragEnd();
+            _Listener.ChangeState(new IdleInputState(_Listener, _Tap, _Drag));
             // TODO: Implement Drag end functionality here.
         }
 
-        public MovingInputState(IInputState listener) : base(listener){}
+        public MovingInputState(IInputState listener, ITap tap, IDrag drag) : base(listener, tap, drag){}
         
-        public MovingInputState(){}
     }
 }

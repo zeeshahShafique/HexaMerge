@@ -5,20 +5,25 @@ namespace _Hexa_Merge.Scripts.Input
 {
     public class CalibrationInputState : InputState
     {
-        public override void Move()
+        private Vector2 _startPos;
+        public override void Move(Touch touch)
         {
-            Listener.ChangeState(new MovingInputState(Listener));
+            if (Mathf.Abs(touch.position.magnitude -_startPos.magnitude) > 10)
+                _Listener.ChangeState(new MovingInputState(_Listener, _Tap, _Drag));
         }
 
-        public override void End()
+        public override void End(Touch touch)
         {
-            Debug.Log($"Just Tapped");
-            Listener.ChangeState(new IdleInputState(Listener));
+            _Tap.OnTap();
+            _Listener.ChangeState(new IdleInputState(_Listener, _Tap, _Drag));
             //TODO: call tap functionality here
         }
 
-        public CalibrationInputState(IInputState listener) : base(listener){}
-        
-        public CalibrationInputState(){}
+        public CalibrationInputState(IInputState listener, ITap tap, IDrag drag, Vector2 startPos) : base(listener, tap,
+            drag)
+        {
+            _startPos = startPos;
+        }
+
     }
 }

@@ -1,37 +1,39 @@
+using System.Data.Common;
 using _Hexa_Merge.Scripts.Input;
 using _Hexa_Merge.Scripts.Input.Interfaces;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.WSA;
 
 public class InputSystem : MonoBehaviour, IInputState
 {
-    private Touch theTouch;
-    private Vector2 startPosition, endPosition;
+    private Vector2 _startPosition, _endPosition;
     private InputState _state;
 
-    private IInputState _iState;
-    
+    [SerializeField] private TileController TileController;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _iState = GetComponent<IInputState>();
-        ChangeState(new IdleInputState(_iState));
+        ChangeState(new IdleInputState(this, TileController, TileController));
     }
 
     // Update is called once per frame
     private void Update()
     {
         if (Input.touchCount <= 0) return;
-        theTouch = Input.GetTouch(0);
-        switch (theTouch.phase)
+        var touch = Input.GetTouch(0);
+        switch (touch.phase)
         {
             case TouchPhase.Began:
-                _state.Begin();
+                _state.Begin(touch);
                 break;
+            case TouchPhase.Stationary:
             case TouchPhase.Moved:
-                _state.Move();
+                _state.Move(touch);
                 break;
             case TouchPhase.Ended:
-                _state.End();
+                _state.End(touch);
                 break;
             default:
                 break;
