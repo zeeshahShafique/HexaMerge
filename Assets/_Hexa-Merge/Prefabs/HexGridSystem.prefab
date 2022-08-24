@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3679cc79e91774fdd84c02ddecba1695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _GridSize: 5
+  _GridSize: 4
   _HexNodePrefab: {fileID: 2150092744109432417, guid: 157dc4a5658174857b808cf13ea43934, type: 3}
+  _grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
