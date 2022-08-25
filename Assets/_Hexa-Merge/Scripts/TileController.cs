@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.WSA;
 using Random = System.Random;
 
 public class TileController : MonoBehaviour, IDrag, ITap
@@ -10,8 +9,6 @@ public class TileController : MonoBehaviour, IDrag, ITap
     [SerializeField] private GameObject[] _TilePrefab;
 
     [SerializeField] private GridSystemSO _Grid;
-
-    private SpriteRenderer[] _renderers;
     
     private Camera _camera;
 
@@ -31,6 +28,15 @@ public class TileController : MonoBehaviour, IDrag, ITap
             movement + Vector2.up,
             Time.deltaTime * 2 + distance);
         _Tile.transform.localPosition = localPosition;
+        if (_Tile.transform.childCount > 0)
+        {
+            HighlightInGrid(_Tile.transform.GetChild(0));
+            HighlightInGrid(_Tile.transform.GetChild(1));
+        }
+        else
+        {
+            HighlightInGrid(_Tile.transform); 
+        }
     }
     
     public void OnDragEnd()
@@ -39,9 +45,9 @@ public class TileController : MonoBehaviour, IDrag, ITap
         {
             if (SnapOnGrid(_Tile.transform.GetChild(0)) && SnapOnGrid(_Tile.transform.GetChild(1)))
             {
-                foreach (var renderer in _Tile.GetComponentsInChildren<SpriteRenderer>())
+                foreach (var spriteRenderer in _Tile.GetComponentsInChildren<SpriteRenderer>())
                 {
-                    renderer.sortingOrder = 1;
+                    spriteRenderer.sortingOrder = 1;
                 }
                 SpawnNewTile();
                 return;
@@ -49,8 +55,7 @@ public class TileController : MonoBehaviour, IDrag, ITap
         }
         else if (_Tile.transform.CompareTag("Tile"))
         {
-            var pos = SnapOnGrid(_Tile.transform);
-            if (pos != null)
+            if (SnapOnGrid(_Tile.transform))
             {
                 _Tile.GetComponent<SpriteRenderer>().sortingOrder = 1;
                 SpawnNewTile();
@@ -74,13 +79,32 @@ public class TileController : MonoBehaviour, IDrag, ITap
             var x = localPosition.x;
             var y = localPosition.y;
             if ((Math.Abs(x - _Grid.NodesPositions[i].x) < 0.5f) &&
-                Math.Abs(y - _Grid.NodesPositions[i].y) < 0.5f)
+                Math.Abs(y - _Grid.NodesPositions[i].y) < 0.433f)
             {
                 Snap(objectTransform, _Grid.NodesPositions[i]);
                 return true;
             }
         }
         return false;
+    }
+
+    private void HighlightInGrid(Transform objectTransform)
+    {
+        for (var i = 0; i < _Grid.NodesPositions.Count; i++)
+        {
+            var localPosition = objectTransform.position;
+            var x = localPosition.x;
+            var y = localPosition.y;
+            if ((Math.Abs(x - _Grid.NodesPositions[i].x) < 0.5f) &&
+                Math.Abs(y - _Grid.NodesPositions[i].y) < 0.433f)
+            {
+                HighlightNode(i, Color.green);
+            }
+            else
+            {
+                HighlightNode(i, Color.white);
+            }
+        }
     }
     
     private void HighlightNode(int index, Color color)

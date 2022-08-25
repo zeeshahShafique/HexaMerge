@@ -6,26 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Flower in Pot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Flower in Pot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/ButterflyTile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/ButterflyTile.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/HexGridSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/HexGridSystem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/TouchCanvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/TouchCanvas.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ResetGame.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -87,10 +69,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9702">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9702" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -108,6 +90,7 @@
       <updated>1660630831341</updated>
       <workItem from="1660630837979" duration="2017000" />
       <workItem from="1660633177979" duration="8979000" />
+      <workItem from="1661350441378" duration="1429000" />
     </task>
     <servers />
   </component>

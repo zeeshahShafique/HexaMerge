@@ -52,6 +52,7 @@ public class HexGridSystem : MonoBehaviour
                 _position.Set(x, y);
                 _grid.NodesPositions.Add(_position);
                 var tile = Instantiate(_HexNodePrefab, _position, Quaternion.identity, this.transform);
+                Debug.Log(tile.gameObject.GetType());
                 _grid.Nodes.Add(tile);
                 x += 1;
             }
