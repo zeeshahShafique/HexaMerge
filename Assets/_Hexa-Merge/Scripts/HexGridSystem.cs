@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json.Converters;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class HexGridSystem : MonoBehaviour
@@ -18,6 +19,7 @@ public class HexGridSystem : MonoBehaviour
     {
         _grid.Nodes = new List<GameObject>();
         _grid.NodesPositions = new List<Vector2>();
+        _grid.Vacant = new bool[23];
         GridLayoutGenerator();
         GenerateGrid();
     }
@@ -44,6 +46,7 @@ public class HexGridSystem : MonoBehaviour
     void GenerateGrid()
     {
         float x, y = 0;
+        int index = 0;
         for (int i = 0; i < _nodes.Count; i++)
         {
             x = (i % 2 == 0) ? 0 : 0.5f;
@@ -52,8 +55,8 @@ public class HexGridSystem : MonoBehaviour
                 _position.Set(x, y);
                 _grid.NodesPositions.Add(_position);
                 var tile = Instantiate(_HexNodePrefab, _position, Quaternion.identity, this.transform);
-                Debug.Log(tile.gameObject.GetType());
                 _grid.Nodes.Add(tile);
+                _grid.Vacant[index++] = true;
                 x += 1;
             }
 

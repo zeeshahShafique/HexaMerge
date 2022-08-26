@@ -6,4 +6,5 @@ public class GridSystemSO : ScriptableObject
 {
     public List<Vector2> NodesPositions;
     public List<GameObject> Nodes;
+    public bool[] Vacant;
 }

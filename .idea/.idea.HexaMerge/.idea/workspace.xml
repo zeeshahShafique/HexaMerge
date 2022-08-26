@@ -6,8 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResetGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ResetGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +31,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ResetGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator/SkipSpawnedTile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,10 +85,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="755">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="755" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -113,5 +129,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="this._highlightVecCache" />
+        <watch expression="this._highlightVec" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
