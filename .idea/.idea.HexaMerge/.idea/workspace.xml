@@ -6,23 +6,116 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResetGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ResetGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/CalibrationInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/IdleInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/MovingInputState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/InputSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/CombinedTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/CombinedTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/HexGridSystem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/HexGridSystem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (Flower).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top (Flower).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/Hexagon Pointed-Top.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/TilesQueue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Prefabs/TilesQueue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/SFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scenes/GameScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scriptable Objects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scriptable Objects/GridSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scriptable Objects/GridSystem/GridData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scriptable Objects/GridSystem/GridData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Enums.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Enums/HexState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Enums/HexState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/HexGridSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IDrag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IDrag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IInputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/IInputState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/ITap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/Interfaces/ITap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/CalibrationInputState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/IdleInputState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/MovingInputState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator/Interface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator/SkipSpawnedTile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/ResetGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/ResetGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/Interface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/Interface/ITileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/Interface/ITileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/HighlightedTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/HighlightedTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/IdleTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/IdleTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/MovingTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/MovingTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/NullTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/NullTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/OccupiedTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/OccupiedTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/TileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/TileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/VacantTileState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/TileStateMachine/States/VacantTileState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Sprites/Hexa Board.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/Sprites/Hexa Board.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/Cycle Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/Cycle Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/Ellipse 1's Outer Stroke copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/Ellipse 1's Outer Stroke copy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/bin cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/bin cap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/blue circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/blue circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/health.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/health.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/logo01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/logo01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/play button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/play button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star bar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star counter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star counter.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/trash-can.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/UI/trash-can.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Hexa-Merge/VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +124,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/Input/States/InputState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Hexa-Merge/Scripts/RandomGenerator/SkipSpawnedTile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,10 +175,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="755">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="747">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="755" />
+      <option name="pid" value="747" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -107,6 +197,7 @@
       <workItem from="1660630837979" duration="2017000" />
       <workItem from="1660633177979" duration="8979000" />
       <workItem from="1661350441378" duration="1429000" />
+      <workItem from="1661754296388" duration="9390000" />
     </task>
     <servers />
   </component>
