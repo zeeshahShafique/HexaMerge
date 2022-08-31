@@ -1,7 +1,7 @@
 using _Hexa_Merge.Scripts.Input.Interfaces;
 using UnityEngine;
 
-namespace _Hexa_Merge.Scripts.Input
+namespace _HexaMerge.Scripts.Input.States
 {
     public class InputState
     {

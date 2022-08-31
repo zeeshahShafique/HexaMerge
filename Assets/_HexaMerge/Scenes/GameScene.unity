@@ -492,12 +492,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04a394b8fb7c4cf7b89a3ab4ebfabc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Tile: {fileID: 711185389}
-  _TilePrefab:
-  - {fileID: 2150092744109432417, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-  - {fileID: 2150092744109432417, guid: a5fe346e0699e49298e05fa57ffd8a1e, type: 3}
+  CacheTilePos: {x: 2, y: -8, z: 0}
+  TilePrefab:
+  - {fileID: 464627982801740520, guid: c24896115503c4db18a8c7cfe609fb55, type: 3}
+  - {fileID: 2515860978885362044, guid: b2e4d825013ca45279f20c99b47fc475, type: 3}
   - {fileID: 9012381981423921256, guid: e5e9982b243f54d99afb9b95b8bb3caa, type: 3}
-  _Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
+  Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
+  HighlightSprite: {fileID: 21300000, guid: 6690982850664499ba0c4ceb67bd3053, type: 3}
+  CellSprite: {fileID: 21300000, guid: eb35e6ec6b6a3467bbd8404ec5d302fe, type: 3}
+  MergeSystem: {fileID: 11400000, guid: 9b26f21a503fe4810977a8068a1e5794, type: 2}
 --- !u!4 &701032256
 Transform:
   m_ObjectHideFlags: 0
@@ -513,68 +516,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &711185388
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2150092744109432417, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_Name
-      value: Hexagon Pointed-Top (ButterFly)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8559183540701773658, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
---- !u!1 &711185389 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2150092744109432417, guid: 9c5e9cd7e9c6c457e8586acef177857c, type: 3}
-  m_PrefabInstance: {fileID: 711185388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &891201336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8d7e56b0eab4f859a6f89ef8ad6ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
 --- !u!4 &1665890246
 Transform:
   m_ObjectHideFlags: 0

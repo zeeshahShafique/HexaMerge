@@ -1,4 +1,3 @@
-using System;
 using _HexaMerge.Scripts.NodeStateMachine.Interface;
 using _HexaMerge.Scripts.NodeStateMachine.States;
 using _HexaMerge.Scripts.RandomGenerator;
@@ -9,38 +8,42 @@ using Random = System.Random;
 public class TileController : MonoBehaviour, IDrag, ITap, INodeState
 
 {
-#region OldCode
+    #region OldCode
     
-    [SerializeField] private GameObject _Tile;
+    private GameObject _tile;
     
-    [SerializeField] private GameObject[] _TilePrefab;
-    
-    [SerializeField] private GridSystemSO _Grid;
+    [SerializeField] private Vector3 CacheTilePos;
 
+    [SerializeField] private GameObject[] TilePrefab;
+
+    [SerializeField] private GridSystemSO Grid;
+
+    [SerializeField] private Sprite HighlightSprite;
+
+    [SerializeField] private Sprite CellSprite;
+
+    [SerializeField] private MergeSystem MergeSystem;
     
+
     // Cache objects bellow.
-    
+
     private readonly Color _color = new(0.1764f, 0.1764f, 0.1764f, 0.75f);
     
     private Camera _camera;
-    
-    private Vector3 _cacheTilePos;
-
     private Vector2?[] _highlightVec, _highlightVecCache;
 
     private void OnEnable()
     {
         SkipSpawnedTile.OnSkip += SkipTile;
     }
-
     private void Start()
     {
         _camera = Camera.main;
-        _cacheTilePos = _Tile.transform.localPosition;
+        SpawnNewTile();
+        CacheTilePos = _tile.transform.localPosition;
         _highlightVec = new Vector2?[2];
         _highlightVecCache = new Vector2?[2];
     }
-
     private void OnDisable()
     {
         SkipSpawnedTile.OnSkip -= SkipTile;
@@ -49,147 +52,145 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     public void OnDrag(Touch touch)
     {
         Vector2 movement = _camera.ScreenToWorldPoint(touch.position);
-        var localPosition = _Tile.transform.localPosition;
+        var localPosition = _tile.transform.localPosition;
         float distance = Vector2.Distance(localPosition, movement);
         localPosition = Vector3.Lerp(localPosition,
             movement + Vector2.up,
             Time.deltaTime * 2 + distance);
-        _Tile.transform.localPosition = localPosition;
-        if (_Tile.transform.childCount > 0)
-        {
-            _highlightVec[0] = HighlightInGrid(_Tile.transform.GetChild(0).position, Color.green);
-            _highlightVec[1] = HighlightInGrid(_Tile.transform.GetChild(1).position, Color.green);
-            if (!_highlightVec[0].HasValue || !_highlightVec[1].HasValue || !_highlightVecCache[0].Equals(_highlightVec[0]) || !_highlightVecCache[1].Equals(_highlightVec[1]))
-            {
-                _highlightVecCache[0] = _highlightVec[0];
-                _highlightVecCache[1] = _highlightVec[1];
-                ClearGridHighlight();
-            }
-        }
-        else
-        {
-            _highlightVec[0] = HighlightInGrid(_Tile.transform.position, Color.green);
-            if (!_highlightVec[0].HasValue || !_highlightVecCache[0].Equals(_highlightVec[0]))
-            {
-                _highlightVecCache[0] = _highlightVec[0];
-                ClearGridHighlight();
-            }
-        }
+        _tile.transform.localPosition = localPosition;
+        HighlightCell();
     }
-
+    private void HighlightCell()
+    {
+        var allTrue = true;
+        for (int i = 0; i < _tile.transform.childCount; i++)
+        {
+            _highlightVec[i] = HighlightInGrid(_tile.transform.GetChild(i).position, Color.white);
+            if (_highlightVec[i].HasValue && _highlightVecCache[i].Equals(_highlightVec[i])) continue;
+            allTrue = false;
+            _highlightVecCache[i] = _highlightVec[i];
+            break;
+        }
+        if (allTrue) return;
+        ClearGridHighlight();
+    }
     private Vector2? HighlightInGrid(Vector2 objectTransform, Color color)
     {
-        for (var i = 0; i < _Grid.NodesPositions.Count; i++)
+        foreach (var key in Grid.NodeInfo.Keys)
         {
-            var localPosition = objectTransform;
-            var x = localPosition.x;
-            var y = localPosition.y;
-            if (_Grid.Vacant[i] && (Math.Abs(x - _Grid.NodesPositions[i].x) < 0.5f) &&
-                Math.Abs(y - _Grid.NodesPositions[i].y) < 0.433f)
-            {
-                HighlightNode(i, color);
-                return _Grid.NodesPositions[i];
-            }
+            Vector2 position = objectTransform;
+            if (!(Mathf.Abs(position.x - key.x) < 0.5f) || 
+                !(Mathf.Abs(position.y - key.y) < 0.433f)) continue;
+            if (Grid.NodeInfo[key].Occupied) continue;
+            HighlightNode(Grid.NodeInfo[key].Index, HighlightSprite, color);
+            return key;
         }
         return null;
     }
-    
-    private void HighlightNode(int index, Color color)
+    private void HighlightNode(int index, Sprite sprite, Color color)
     {
-        _Grid.Nodes[index].GetComponent<SpriteRenderer>().color = color;
+        var spriteRenderer = Grid.Nodes[index].GetComponent<SpriteRenderer>();
+        spriteRenderer.color = color;
+        spriteRenderer.sprite = sprite;
     }
-    
     private void ClearGridHighlight()
     {
-        for (int i = 0; i < _Grid.NodesPositions.Count; i++)
+        for (int i = 0; i < Grid.NodesPositions.Count; i++)
         {
-            HighlightNode(i, _color);
+            HighlightNode(i, CellSprite, _color);
         }
     }
     
     public void OnDragEnd()
     {
-        if (_Tile.transform.CompareTag("CombinedTile"))
+        if (SnapTiles())
         {
-            var index1 = SnapOnGrid(_Tile.transform.GetChild(0));
-            var index2 = SnapOnGrid(_Tile.transform.GetChild(1));
-            if (index1 != -1 && index2 != -1)
-            {
-                _Grid.Vacant[index1] = false;
-                _Grid.Vacant[index2] = false;
-                foreach (var spriteRenderer in _Tile.GetComponentsInChildren<SpriteRenderer>())
-                {
-                    spriteRenderer.sortingOrder = 1;
-                }
-                SpawnNewTile();
-                return;
-            }
+            return;
         }
-        else if (_Tile.transform.CompareTag("Tile"))
-        {
-            var index = SnapOnGrid(_Tile.transform); 
-            if (index != -1)
-            {
-                _Grid.Vacant[index] = false;
-                _Tile.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                SpawnNewTile();
-                return;
-            }
-        }
-        Return(_Tile);
+        Return(_tile);
     }
+    private bool SnapTiles()
+    {
+        var allTrue = true;
+        var indices = new Vector2?[_tile.transform.childCount];
+        for (int i = 0; i < indices.Length; i++)
+        {
+            indices[i] = SnapOnGrid(_tile.transform.GetChild(i));
+            if (!indices[i].HasValue)
+                allTrue = false;
+        }
 
-    private void SkipTile()
-    {
-        var OldTile = _Tile;
-        SpawnNewTile();
-        Destroy(OldTile);
-    }
-    private void SpawnNewTile()
-    {
-        var range = new Random();
-        _Tile = Instantiate(_TilePrefab[range.Next(_TilePrefab.Length)], _cacheTilePos, Quaternion.identity);
-    }
-    
-    private int SnapOnGrid(Transform objectTransform)
-    {
-        for (var i = 0; i < _Grid.NodesPositions.Count; i++)
+        if (allTrue)
         {
-            var localPosition = objectTransform.position;
-            var x = localPosition.x;
-            var y = localPosition.y;
-            if (_Grid.Vacant[i] && (Math.Abs(x - _Grid.NodesPositions[i].x) < 0.5f) &&
-                Math.Abs(y - _Grid.NodesPositions[i].y) < 0.433f)
+            for (int i = 0; i < indices.Length; i++)
             {
-                Snap(objectTransform, _Grid.NodesPositions[i]);
-                 return i;
+                Grid.NodeInfo[(Vector2) indices[i]].Occupied = true;
+                var spriteRenderer = _tile.transform.GetComponentInChildren<TileInfo>().Sprite;
+                Grid.NodeInfo[(Vector2)indices[i]].Sprite = spriteRenderer;
+                spriteRenderer.sortingOrder = 1;
+                var currentTile = _tile.transform.GetChild(0).position;
+                MergeSystem.SearchTiles(currentTile, spriteRenderer.sprite);
+                _tile.transform.GetChild(0).SetParent(Grid.Nodes[Grid.NodeInfo[(Vector2)indices[i]].Index].transform);
             }
+
+            SpawnNewTile();
+            ClearGridHighlight();
+            return true;
         }
-        return -1;
+
+        return false;
     }
-  
+    private Vector2? SnapOnGrid(Transform objectTransform)
+    {
+        foreach (var key in Grid.NodeInfo.Keys)
+        {
+            Vector2 position = objectTransform.position;
+            if (!(Mathf.Abs(position.x - key.x) < 0.5f) || !(Mathf.Abs(position.y - key.y) < 0.433f)) continue;
+            if (Grid.NodeInfo[key].Occupied) continue;
+            Snap(objectTransform, key);
+            return key;
+        }
+        return null;
+    }
     private void Snap(Transform objectTransform,Vector2 snapPosition)
     {
         objectTransform.position = snapPosition;
     }
-    
+    private void SkipTile()
+    {
+        SpawnNewTile();
+    }
+    private void SpawnNewTile()
+    {
+        if(_tile)
+            Destroy(_tile);
+        var range = new Random();
+        _tile = Instantiate(TilePrefab[range.Next(TilePrefab.Length)], CacheTilePos, Quaternion.identity);
+    }
     private void Return(GameObject tile)
     {
-        tile.transform.DOMove(_cacheTilePos, 0.5f).SetEase(Ease.Linear);
-        if (_Tile.transform.CompareTag("CombinedTile"))
+        var distance = Vector2.Distance(CacheTilePos, tile.transform.position);
+        tile.transform.DOMove(CacheTilePos, distance * Time.deltaTime).SetEase(Ease.Linear);
+        if (_tile.transform.CompareTag("CombinedTile"))
         {
-            tile.transform.GetChild(0).localPosition = Vector3.left * 0.5f;
-            tile.transform.GetChild(1).localPosition = Vector3.right * 0.5f;
+            var pos = 0.5f;
+            for (int i = 0; i < _tile.transform.childCount; i++)
+            {
+                tile.transform.GetChild(i).localPosition = Vector3.left * pos;
+                pos = -pos;
+            }
         }
     }
     
     public void OnTap()
     {
-        if (_Tile.transform.CompareTag("CombinedTile"))
+        if (_tile.transform.CompareTag("CombinedTile"))
         {
-            _Tile.transform.Rotate(Vector3.forward, 60, Space.Self);
-            _Tile.transform.GetChild(0).Rotate(Vector3.back, 60, Space.Self);
-            _Tile.transform.GetChild(1).Rotate(Vector3.back, 60, Space.Self);
+            _tile.transform.Rotate(Vector3.forward, 60, Space.Self);
+            for (int i = 0; i < _tile.transform.childCount; i++)
+            {
+                _tile.transform.GetChild(i).Rotate(Vector3.back, 60, Space.Self);
+            }
         }
     }
     

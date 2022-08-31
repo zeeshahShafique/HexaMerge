@@ -1,5 +1,5 @@
-using _Hexa_Merge.Scripts.Input;
 using _Hexa_Merge.Scripts.Input.Interfaces;
+using _HexaMerge.Scripts.Input.States;
 using UnityEngine;
 
 public class InputSystem : MonoBehaviour, IInputState

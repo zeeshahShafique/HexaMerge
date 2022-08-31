@@ -1,8 +1,8 @@
+using _Hexa_Merge.Scripts.Input;
 using _Hexa_Merge.Scripts.Input.Interfaces;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
-namespace _Hexa_Merge.Scripts.Input
+namespace _HexaMerge.Scripts.Input.States
 {
     public class MovingInputState : InputState
     {
