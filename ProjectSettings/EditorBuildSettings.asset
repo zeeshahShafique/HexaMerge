@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_HexaMerge/Scenes/SplashScene.unity
+    guid: c55e710d9bea348fc8b7bc7df17b127d
+  - enabled: 1
     path: Assets/_HexaMerge/Scenes/GameScene.unity
     guid: 59c8d08ef62654add9c8f76c919f4c7e
   m_configObjects: {}
