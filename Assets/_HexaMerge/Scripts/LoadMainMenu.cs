@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneHandler : MonoBehaviour
+public class LoadMainMenu : MonoBehaviour
 {
     [SerializeField] private Image FillBar;
 
@@ -13,23 +13,17 @@ public class SceneHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FillBar.fillAmount = 0;
-        LoadGame();
+        StartCoroutine(LoadSceneAsync());
     }
 
-    IEnumerator LoadSceneAsync(String scene, bool allowActive = true)
+    IEnumerator LoadSceneAsync()
     {
-        AsyncOperation menuLoad = SceneManager.LoadSceneAsync(scene);
-        menuLoad.allowSceneActivation = allowActive;
+        FillBar.fillAmount = 0;
+        AsyncOperation menuLoad = SceneManager.LoadSceneAsync("MainMenu");
         while (!menuLoad.isDone)
         {
             FillBar.fillAmount = menuLoad.progress;
             yield return null;
         }
-    }
-
-    public void LoadGame()
-    {
-        StartCoroutine(LoadSceneAsync("GameScene"));
     }
 }
