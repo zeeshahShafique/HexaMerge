@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TileTierConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TileTierConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <workItem from="1660630837979" duration="2017000" />
       <workItem from="1660633177979" duration="8979000" />
       <workItem from="1661350441378" duration="1429000" />
-      <workItem from="1661754296388" duration="52829000" />
+      <workItem from="1661754296388" duration="53220000" />
     </task>
     <servers />
   </component>
