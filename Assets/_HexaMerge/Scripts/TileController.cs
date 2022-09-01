@@ -31,7 +31,7 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     
     private Camera _camera;
     private Vector2?[] _highlightVec, _highlightVecCache;
-
+    
     private void OnEnable()
     {
         SkipSpawnedTile.OnSkip += SkipTile;
@@ -122,15 +122,20 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
 
         if (allTrue)
         {
+            var sprites = new Sprite[indices.Length];
             for (int i = 0; i < indices.Length; i++)
             {
                 Grid.NodeInfo[(Vector2) indices[i]].Occupied = true;
                 var spriteRenderer = _tile.transform.GetComponentInChildren<TileInfo>().Sprite;
                 Grid.NodeInfo[(Vector2)indices[i]].Sprite = spriteRenderer;
+                sprites[i] = spriteRenderer.sprite;
                 spriteRenderer.sortingOrder = 1;
-                var currentTile = _tile.transform.GetChild(0).position;
-                MergeSystem.SearchTiles(currentTile, spriteRenderer.sprite);
                 _tile.transform.GetChild(0).SetParent(Grid.Nodes[Grid.NodeInfo[(Vector2)indices[i]].Index].transform);
+            }
+
+            for (int i = 0; i < indices.Length; i++)
+            {
+                MergeSystem.SearchTiles((Vector2)indices[i], sprites[i]);
             }
 
             SpawnNewTile();

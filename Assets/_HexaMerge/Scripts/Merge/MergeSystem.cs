@@ -24,7 +24,7 @@ public class MergeSystem : ScriptableObject
     
     private readonly Color _color = new(0.1764f, 0.1764f, 0.1764f, 0.75f);
 
-    private Vector2[] Directions = { Direction.TopLeft, Direction.Left, Direction.BottomLeft,
+    private readonly Vector2[] _directions = { Direction.TopLeft, Direction.Left, Direction.BottomLeft,
         Direction.BottomRight, Direction.Right, Direction.TopRight };
 
 
@@ -51,7 +51,7 @@ public class MergeSystem : ScriptableObject
         _checkList.Add(_queue.Dequeue());
         for (int i = 0; i < 6; i++)
         {
-            var neighbour = Grid.Neighbour(Grid.WorldToCellPosition(tile), Directions[i]);
+            var neighbour = Grid.Neighbour(Grid.WorldToCellPosition(tile), _directions[i]);
             if (Grid.CellPositions.ContainsKey(neighbour))
             {
                 neighbour = Grid.CellToWorldPosition(neighbour);

@@ -6,31 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Kazmi Bhai/TileGlow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Kazmi Bhai/TileGlow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/House.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/House.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Leafs.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Leafs.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Single Leaf.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Single Leaf.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Tree.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Tree.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/Wood.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/Wood.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top (ButterFly).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top (Flower).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top (Flower).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/GridSystem/HexGridSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/GridSystem/HexGridSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/GridSystem/HexNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/GridSystem/HexNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/Interfaces/IInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/Interfaces/IInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/CalibrationInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/CalibrationInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/IdleInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/IdleInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/InputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/InputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/MovingInputState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Input/States/MovingInputState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TileTierConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TileTierConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
@@ -121,7 +101,7 @@
       <workItem from="1660630837979" duration="2017000" />
       <workItem from="1660633177979" duration="8979000" />
       <workItem from="1661350441378" duration="1429000" />
-      <workItem from="1661754296388" duration="48260000" />
+      <workItem from="1661754296388" duration="52829000" />
     </task>
     <servers />
   </component>
@@ -146,23 +126,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs</url>
-          <line>38</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" initialLine="42" containingFunctionPresentation="method 'SearchTiles'">
-            <startOffsets>
-              <option value="1112" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1129" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="_queue" />

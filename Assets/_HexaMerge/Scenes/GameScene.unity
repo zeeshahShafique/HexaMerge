@@ -497,6 +497,9 @@ MonoBehaviour:
   - {fileID: 464627982801740520, guid: c24896115503c4db18a8c7cfe609fb55, type: 3}
   - {fileID: 2515860978885362044, guid: b2e4d825013ca45279f20c99b47fc475, type: 3}
   - {fileID: 9012381981423921256, guid: e5e9982b243f54d99afb9b95b8bb3caa, type: 3}
+  - {fileID: 464627982801740520, guid: aba973718b64c42c5b58b8be654df30f, type: 3}
+  - {fileID: 2515860978885362044, guid: 7bcf5bd53621845b8826e7aead002283, type: 3}
+  - {fileID: 464627982801740520, guid: 9304ef166da9a44d390552d0c867db3e, type: 3}
   Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
   HighlightSprite: {fileID: 21300000, guid: 6690982850664499ba0c4ceb67bd3053, type: 3}
   CellSprite: {fileID: 21300000, guid: eb35e6ec6b6a3467bbd8404ec5d302fe, type: 3}

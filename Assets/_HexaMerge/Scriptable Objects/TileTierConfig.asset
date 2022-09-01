@@ -39,11 +39,17 @@ MonoBehaviour:
     - {fileID: 21300000, guid: bb60ab3246fdc49588b6600fa1bbaa14, type: 3}
     - {fileID: 21300000, guid: 572bd1a691b714b2c855d34878af69f9, type: 3}
     - {fileID: 21300000, guid: 8a14541d7628d4452886911810d68233, type: 3}
+    - {fileID: 21300000, guid: fb0a0e918dd884a2aa92f4dd3553a24b, type: 3}
+    - {fileID: 21300000, guid: 2914fed099b414da2ac42c43aa7735e7, type: 3}
     _keys:
     - {fileID: 21300000, guid: bb60ab3246fdc49588b6600fa1bbaa14, type: 3}
     - {fileID: 21300000, guid: 572bd1a691b714b2c855d34878af69f9, type: 3}
     - {fileID: 21300000, guid: 8a14541d7628d4452886911810d68233, type: 3}
+    - {fileID: 21300000, guid: fb0a0e918dd884a2aa92f4dd3553a24b, type: 3}
+    - {fileID: 21300000, guid: 2914fed099b414da2ac42c43aa7735e7, type: 3}
     _values:
     - {fileID: 21300000, guid: 572bd1a691b714b2c855d34878af69f9, type: 3}
     - {fileID: 21300000, guid: 8a14541d7628d4452886911810d68233, type: 3}
+    - {fileID: 21300000, guid: fb0a0e918dd884a2aa92f4dd3553a24b, type: 3}
+    - {fileID: 21300000, guid: 2914fed099b414da2ac42c43aa7735e7, type: 3}
     - {fileID: 21300000, guid: bb60ab3246fdc49588b6600fa1bbaa14, type: 3}
