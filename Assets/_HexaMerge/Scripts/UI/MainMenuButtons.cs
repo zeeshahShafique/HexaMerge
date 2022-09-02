@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
 
 public class MainMenuButtons : MonoBehaviour
 {
     [SerializeField] private Scrollbar Scrollbar;
+    [SerializeField] private HorizontalScrollSnap Snap;
     [SerializeField] private float LerpDuration;
 
     private float _endValue = 0.5f;
@@ -19,10 +21,16 @@ public class MainMenuButtons : MonoBehaviour
         }
     }
 
-    public void OnButtonPressed(float endValue)
+    public void OnButtonPressed(int endValue)
+    {
+        Snap.GoToScreen(endValue);
+        ChangeSlider();
+    }
+
+    public void ChangeSlider()
     {
         _timeElapsed = 0;
-        _endValue = endValue / 5f;
+        _endValue = Snap.CurrentPage / 4f;
     }
 
 }
