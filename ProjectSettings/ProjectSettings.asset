@@ -758,7 +758,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: RH_SerializedDictionary
+    Android: RH_SerializedDictionary;LK_HAS_LION_ANALYTICS;HAS_APPLOVIN_CROSS_PROMO_SDK
+    iPhone: LK_HAS_LION_ANALYTICS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
