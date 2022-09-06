@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class TileInfo : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer _sprite;
+    [SerializeField] private SpriteRenderer _Sprite;
 
     private void OnEnable()
     {
-        _sprite = GetComponentInChildren<SpriteRenderer>();
+        _Sprite = GetComponentInChildren<SpriteRenderer>();
     }
     
     public SpriteRenderer Sprite
     {
-        get => _sprite;
-        set => _sprite = value;
+        get => _Sprite;
+        set => _Sprite = value;
     }
 }

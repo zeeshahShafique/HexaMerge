@@ -7,6 +7,11 @@ public class ResetGame : MonoBehaviour
     public void ResetLevel()
     {
         Grid.Clear();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameLevel");
+    }
+
+    public void ExitLevel()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
