@@ -381,6 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FillBar: {fileID: 964051262}
+  LoadTimer: 5
+  AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
 --- !u!4 &851822885
 Transform:
   m_ObjectHideFlags: 0

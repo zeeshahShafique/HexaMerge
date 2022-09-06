@@ -543,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3076e3737fb481e8e379ac36a45c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
 --- !u!1001 &384889593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1710,6 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
+  AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
 --- !u!4 &1665890246
 Transform:
   m_ObjectHideFlags: 0
