@@ -6,19 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionKitSettings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionKitSettings.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadMainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/GridSystem/GridData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/GridSystem/GridData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/GridSystem/GridData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/GridSystem/GridData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadGameLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadGameLevel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadMainMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LoadMainMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/MaxExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/MaxExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/ResetGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Scriptable Objects/GridSystem/GridSystemSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TileInfo.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +45,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/ae/cf031c72/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/df/856e9dae/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LevelFailed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DebugScripts/MaxDebuggerToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/MaxExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Scriptable Objects/TileTierConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/ChangeText.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -122,6 +129,7 @@
       <workItem from="1662383302938" duration="2813000" />
       <workItem from="1662443618448" duration="1057000" />
       <workItem from="1662457701409" duration="17433000" />
+      <workItem from="1662553666955" duration="196000" />
     </task>
     <servers />
   </component>

@@ -86,6 +86,7 @@ public class MergeSystem : ScriptableObject
             spriteRenderer.color = _color;
             
             Destroy(Grid.Nodes[_matches[i]].transform.GetChild(0).gameObject);
+            Grid.OccupiedCount--;
         }
     }
 }

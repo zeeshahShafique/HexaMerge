@@ -8,7 +8,9 @@ public class GridSystemSO : ScriptableObject
     public List<GameObject> Nodes; // Stores actual GameObjects.
     public Dictionary<Vector2, HexNode> NodeInfo; // Stores dictionary of cell information against real world position.
     public Dictionary<Vector2, Vector2> CellPositions;
-
+    public int OccupiedCount;
+    public bool IsFull;
+    
     private void OnEnable()
     {
         NodesPositions = new List<Vector2>();
@@ -23,6 +25,8 @@ public class GridSystemSO : ScriptableObject
         Nodes.Clear();
         NodeInfo.Clear();
         CellPositions.Clear();
+        OccupiedCount = 0;
+        IsFull = false;
     }
 
     private void OnDisable()

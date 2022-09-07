@@ -1,3 +1,4 @@
+using System;
 using _HexaMerge.Scripts.NodeStateMachine.Interface;
 using _HexaMerge.Scripts.NodeStateMachine.States;
 using _HexaMerge.Scripts.RandomGenerator;
@@ -34,6 +35,7 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     
     private void OnEnable()
     {
+        Grid.Clear();
         SkipSpawnedTile.OnSkip += SkipTile;
     }
     private void Start()
@@ -44,6 +46,7 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
         _highlightVec = new Vector2?[2];
         _highlightVecCache = new Vector2?[2];
     }
+
     private void OnDisable()
     {
         SkipSpawnedTile.OnSkip -= SkipTile;
@@ -131,6 +134,7 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
                 sprites[i] = spriteRenderer.sprite;
                 spriteRenderer.sortingOrder = 1;
                 _tile.transform.GetChild(0).SetParent(Grid.Nodes[Grid.NodeInfo[(Vector2)indices[i]].Index].transform);
+                Grid.OccupiedCount++;
             }
 
             for (int i = 0; i < indices.Length; i++)
