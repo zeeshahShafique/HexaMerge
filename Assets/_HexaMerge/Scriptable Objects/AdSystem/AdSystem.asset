@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AdSystem
   m_EditorClassIdentifier: 
   ADTimerDelay: 30
-  _lastLoadedTime: 64.35429
+  _lastLoadedTime: 30.93122
   RewardReceived: 1
   RemoveRVIAP: 0
   RemoveInterIAP: 0

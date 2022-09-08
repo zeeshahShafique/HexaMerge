@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 
 namespace _HexaMerge.Scripts.RandomGenerator
@@ -13,18 +11,11 @@ namespace _HexaMerge.Scripts.RandomGenerator
         
         public void SkipTile()
         {
-            if (AdSystem.ShowRewardedAd())
-            {
-                StartCoroutine(Skip());
-            }
+            AdSystem.ShowRewardedAd(Skip);
         }
 
-        IEnumerator Skip()
+        void Skip()
         {
-            while (!AdSystem.RewardReceived)
-            {
-                yield return null;
-            }
             OnSkip?.Invoke();
         }
     }
