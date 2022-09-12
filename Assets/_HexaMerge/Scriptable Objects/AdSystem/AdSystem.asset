@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AdSystem
   m_EditorClassIdentifier: 
   ADTimerDelay: 30
-  _lastLoadedTime: 30.93122
-  RewardReceived: 1
+  _lastLoadedTime: -Infinity
+  Store: {fileID: 11400000, guid: c028429ff9eae4eb0944c0b9997716c7, type: 2}
   RemoveRVIAP: 0
   RemoveInterIAP: 0

@@ -12,11 +12,13 @@ public class LoadMainMenu : MonoBehaviour
     public float LoadTimer;
 
     [SerializeField] private AdSystem AdSystem;
+    [SerializeField] private StoreSO Store;
     
     // Start is called before the first frame update
     void Start()
     {
         AdSystem.AdSystemInit();
+        Store.Initialize();
         LoadTimer = 5;
         StartCoroutine(LoadSceneAsync());
     }
@@ -35,7 +37,7 @@ public class LoadMainMenu : MonoBehaviour
         while (!menuLoad.isDone)
         {
             FillBar.fillAmount = menuLoad.progress;
-            if (AdSystem.IsAdSystemInitialized() || LoadTimer < 1 )
+            if ((AdSystem.IsAdSystemInitialized() || LoadTimer < 1) && Store.IsInitialized)
                 menuLoad.allowSceneActivation = true;
             yield return null;
         }

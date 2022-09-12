@@ -383,6 +383,7 @@ MonoBehaviour:
   FillBar: {fileID: 964051262}
   LoadTimer: 5
   AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
+  Store: {fileID: 11400000, guid: c028429ff9eae4eb0944c0b9997716c7, type: 2}
 --- !u!4 &851822885
 Transform:
   m_ObjectHideFlags: 0

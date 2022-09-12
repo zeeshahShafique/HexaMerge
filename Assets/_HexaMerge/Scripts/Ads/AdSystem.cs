@@ -1,4 +1,5 @@
 using System;
+using _HexaMerge.Scripts.Shop;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObject/AdSystem", order = 1, fileName = "AdSystem")]
@@ -6,6 +7,7 @@ public class AdSystem : ScriptableObject
 {
     public float ADTimerDelay = 30;
     [SerializeField] private float _lastLoadedTime;
+    [SerializeField] private StoreSO Store;
     
     public bool RemoveRVIAP = false;
 
@@ -47,6 +49,7 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += OnRewardedAdClosedEvent;
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent += OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += OnRewardedAdDisplayFailed;
+        
 
         LoadRewardedAd();
         LoadInterstitialsAd();
@@ -153,4 +156,5 @@ public class AdSystem : ScriptableObject
         RemoveRVIAP = false;
     }
     #endregion
+
 }
