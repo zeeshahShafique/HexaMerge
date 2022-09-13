@@ -1,5 +1,4 @@
 using System;
-using _HexaMerge.Scripts.Shop;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObject/AdSystem", order = 1, fileName = "AdSystem")]
@@ -7,7 +6,6 @@ public class AdSystem : ScriptableObject
 {
     public float ADTimerDelay = 30;
     [SerializeField] private float _lastLoadedTime;
-    [SerializeField] private StoreSO Store;
     
     public bool RemoveRVIAP = false;
 

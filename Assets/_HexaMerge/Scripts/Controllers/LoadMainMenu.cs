@@ -36,8 +36,8 @@ public class LoadMainMenu : MonoBehaviour
         menuLoad.allowSceneActivation = false;
         while (!menuLoad.isDone)
         {
-            FillBar.fillAmount = menuLoad.progress;
-            if ((AdSystem.IsAdSystemInitialized() || LoadTimer < 1) && Store.IsInitialized)
+            Mathf.Lerp(FillBar.fillAmount, menuLoad.progress, menuLoad.progress);
+            if ((AdSystem.IsAdSystemInitialized() && Store.IsInitialized) || LoadTimer < 1)
                 menuLoad.allowSceneActivation = true;
             yield return null;
         }

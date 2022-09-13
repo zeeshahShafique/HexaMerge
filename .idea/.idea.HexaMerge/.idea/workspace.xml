@@ -6,27 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/IAPProductCatalog.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IAPProductCatalog.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/CoinSystem/CoinSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/CoinSystem/CoinSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Reward Handler.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Reward Handler.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Rewards/SpecialPack.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Rewards/SpecialPack.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/IAPTypeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/IAPTypeSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/Kazmi Bhai/Tile.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/Kazmi Bhai/Tile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/store sprites/B-GreenColor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/store sprites/B-GreenColor.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/store sprites/Banner.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/store sprites/Banner.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Examples/CardUI/Images/Super Ellipses/Solid/SE 64R.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Examples/CardUI/Images/Super Ellipses/Solid/SE 64R.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/BigCardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/BigCardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DebugScripts/MaxDebuggerToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/IAPTypeSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" root0="FORCE_HIGHLIGHTING" />
@@ -137,7 +136,7 @@
       <workItem from="1662383302938" duration="2813000" />
       <workItem from="1662443618448" duration="1057000" />
       <workItem from="1662457701409" duration="17433000" />
-      <workItem from="1662553666955" duration="44739000" />
+      <workItem from="1662553666955" duration="57772000" />
     </task>
     <servers />
   </component>
@@ -179,29 +178,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs</url>
-          <line>22</line>
+          <line>24</line>
           <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" initialLine="22" containingFunctionPresentation="method 'PurchaseSuccess'">
             <startOffsets>
-              <option value="618" />
+              <option value="721" />
             </startOffsets>
             <endOffsets>
-              <option value="645" />
+              <option value="748" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" initialLine="45" containingFunctionPresentation="method 'OnIAPButtonPressed'">
-            <startOffsets>
-              <option value="1224" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1260" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs</url>
@@ -217,6 +203,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" initialLine="18" containingFunctionPresentation="method 'SetImage'">
+            <startOffsets>
+              <option value="422" />
+            </startOffsets>
+            <endOffsets>
+              <option value="444" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" initialLine="23" containingFunctionPresentation="method 'SetAmount'">
+            <startOffsets>
+              <option value="504" />
+            </startOffsets>
+            <endOffsets>
+              <option value="534" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

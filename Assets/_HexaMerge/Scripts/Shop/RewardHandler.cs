@@ -1,4 +1,5 @@
 using System;
+using _HexaMerge.Scripts.RandomGenerator;
 using _HexaMerge.Scripts.Shop.Enum;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace _HexaMerge.Scripts.Shop
     {
         [SerializeField] private AdSystem AdSystem;
         [SerializeField] private Coins CoinSystem;
+        [SerializeField] private SkipSpawnedTile SkipSystem;
         
         public Action<bool> IAPCompleted;
 
@@ -46,7 +48,7 @@ namespace _HexaMerge.Scripts.Shop
 
         public void AddSkips(int amount)
         {
-            
+            SkipSystem.AddSkips(amount);
         }
 
         public void RemoveAds()

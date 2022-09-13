@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869af63b47123481cbe8bebb0f39bdfc, type: 3}
-  m_Name: CoinSystem
+  m_Script: {fileID: 11500000, guid: 7f3076e3737fb481e8e379ac36a45c3d, type: 3}
+  m_Name: SkipTileSystem
   m_EditorClassIdentifier: 
-  CoinAmount: 7600
-  CoinPrefKey: CoinsAmount
+  SkipAmount: 1
+  SkipPrefKey: SkipsAmount
+  AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}

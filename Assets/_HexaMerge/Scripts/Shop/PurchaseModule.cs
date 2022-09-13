@@ -8,7 +8,6 @@ namespace _HexaMerge.Scripts.Shop
     {
         [SerializeField] private StoreSO Store;
 
-        
         [SerializeField]
         private RewardHandler Rewards;
         // [SerializeField] private Rect 

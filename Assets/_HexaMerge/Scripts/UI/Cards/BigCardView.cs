@@ -6,8 +6,12 @@ using UnityEngine.UI;
 
 public class BigCardView : CardView
 {
+    [Header("BIG CARD ITEMS")] 
+    [SerializeField] private RectTransform RewardItems;
     [SerializeField] private TextMeshProUGUI CoinAmount;
     [SerializeField] private Image Coin;
+
+    [SerializeField] private GameObject NewItemPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,14 @@ public class BigCardView : CardView
                 SetCoinAmount(reward.GetAmount().ToString());
                 SetCoinSprite(reward.GetIcon());
             }
+            else
+            {
+                var item = Instantiate(NewItemPrefab, RewardItems);
+                var rewardItem = item.GetComponent<BigCardRewardItem>();
+                rewardItem.SetAmount(reward.GetAmount());
+                rewardItem.SetImage(reward.GetIcon());
+            }
+
             // SetRewardSprite(reward.GetIcon());
             // SetRewardAmount(reward.GetAmount().ToString());
         }

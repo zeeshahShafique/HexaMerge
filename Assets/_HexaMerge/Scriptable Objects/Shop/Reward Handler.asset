@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
   CoinSystem: {fileID: 11400000, guid: 1a62550c6b00149d0a43f5a5ac2c4fe7, type: 2}
+  SkipSystem: {fileID: 11400000, guid: dd540b86e829549cbbaa1cd8bed60f45, type: 2}
