@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869af63b47123481cbe8bebb0f39bdfc, type: 3}
   m_Name: CoinSystem
   m_EditorClassIdentifier: 
-  CoinAmount: 7600
+  CoinAmount: 1000
   CoinPrefKey: CoinsAmount

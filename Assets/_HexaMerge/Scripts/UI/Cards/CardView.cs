@@ -1,3 +1,4 @@
+using System.Collections;
 using _HexaMerge.Scripts.Shop;
 using DG.Tweening;
 using TMPro;
@@ -52,10 +53,16 @@ namespace _HexaMerge.Scripts.UI.Cards
         {
             Debug.LogError($"Purchase Module Called");
             Button.interactable = false;
-            PurchaseModule.MakePurchase(Reward);
+            StartCoroutine(nameof(Purchase));
             ShopOverlay.gameObject.SetActive(true);
             PurchaseModule.AddPurchaseCompleteAction(IAPCompleted);
             this.transform.DOPunchScale(Vector3.one * 0.2f, 0.5f, 5, 1f);
+        }
+
+        private IEnumerator Purchase()
+        {
+            yield return new WaitForSeconds(0.5f);
+            PurchaseModule.MakePurchase(Reward);
         }
 
         private void IAPCompleted(bool flag)

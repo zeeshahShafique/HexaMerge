@@ -1,15 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "ScriptableObject/CoinSystem", order = 1)]
 public class Coins : ScriptableObject
 {
-    [SerializeField] private int CoinAmount;
+    [SerializeField] private int CoinAmount = 500;
     [SerializeField] private String CoinPrefKey;
 
     private void OnEnable()
     {
-        CoinAmount = PlayerPrefs.GetInt(CoinPrefKey);
+        if(PlayerPrefs.HasKey(CoinPrefKey))
+            CoinAmount = PlayerPrefs.GetInt(CoinPrefKey);
     }
 
     private void OnDisable()

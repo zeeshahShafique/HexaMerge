@@ -6,7 +6,7 @@ namespace _HexaMerge.Scripts.RandomGenerator
     [CreateAssetMenu(menuName = "ScriptableObject/SkipTileSystem", order = 1)]
     public class SkipSpawnedTile : ScriptableObject
     {
-        [SerializeField] private int SkipAmount;
+        [SerializeField] private int SkipAmount = 5;
         [SerializeField] private String SkipPrefKey;
         public delegate void SkipGeneratedTile();
         public static event SkipGeneratedTile OnSkip;
@@ -15,7 +15,8 @@ namespace _HexaMerge.Scripts.RandomGenerator
 
         private void OnEnable()
         {
-            SkipAmount = PlayerPrefs.GetInt(SkipPrefKey);
+            if (PlayerPrefs.HasKey(SkipPrefKey))
+                SkipAmount = PlayerPrefs.GetInt(SkipPrefKey);
         }
 
         private void OnDisable()

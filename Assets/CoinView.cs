@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,11 @@ public class CoinView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI CoinText;
 
     private int _currentCoins;
+
+    private void Start()
+    {
+        _currentCoins = Int32.Parse(CoinText.text);
+    }
 
     private void Update()
     {
