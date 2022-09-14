@@ -1,20 +1,21 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(menuName = "ScriptableObject/CoinSystem", order = 1)]
+[CreateAssetMenu(menuName = "ScriptableObject/CoinSystem/CoinSO", order = 1)]
 public class Coins : ScriptableObject
 {
     [SerializeField] private int CoinAmount = 500;
     [SerializeField] private String CoinPrefKey;
+
+    public Action<int> ChangeCoinText;
 
     private void OnEnable()
     {
         if(PlayerPrefs.HasKey(CoinPrefKey))
             CoinAmount = PlayerPrefs.GetInt(CoinPrefKey);
     }
-
-    private void OnDisable()
+    
+    private void SavePlayerPref()
     {
         PlayerPrefs.SetInt(CoinPrefKey, CoinAmount);
         PlayerPrefs.Save();
@@ -23,11 +24,15 @@ public class Coins : ScriptableObject
     public void AddCoins(int amount)
     {
         CoinAmount += amount;
+        SavePlayerPref();
+        ChangeCoinText?.Invoke(CoinAmount);
     }
 
     public void RemoveCoins(int amount)
     {
         CoinAmount -= amount;
+        SavePlayerPref();
+        ChangeCoinText?.Invoke(CoinAmount);
     }
 
     public int GetCoins()

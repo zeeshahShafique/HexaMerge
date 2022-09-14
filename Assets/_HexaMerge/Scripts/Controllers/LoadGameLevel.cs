@@ -1,10 +1,14 @@
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadGameLevel : MonoBehaviour
 {
     private bool _playPressed;
+    [SerializeField] private LivesSystem LivesSystem;
+
+    [SerializeField] private RectTransform LivesOverlay;
 
     private void Start()
     {
@@ -26,6 +30,17 @@ public class LoadGameLevel : MonoBehaviour
 
     public void LoadGame()
     {
-        _playPressed = true;
+        if (LivesSystem.HasLives())
+        {
+            LivesSystem.ReduceLives(1);
+            _playPressed = true;
+        }
+        // else
+        // {
+        //     LivesOverlay.DOScale(Vector3.one, 0.2f).OnComplete(() =>
+        //     {
+        //         LivesOverlay.DOScale(Vector3.zero, 0.2f).SetEase(Ease.OutQuad).SetDelay(1.5f);
+        //     }).SetEase(Ease.InQuad);
+        // }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _HexaMerge.Scripts.RandomGenerator
 {
-    [CreateAssetMenu(menuName = "ScriptableObject/SkipTileSystem", order = 1)]
+    [CreateAssetMenu(menuName = "ScriptableObject/SkipTileSystem/SkipTile", order = 1)]
     public class SkipSpawnedTile : ScriptableObject
     {
         [SerializeField] private int SkipAmount = 5;
@@ -12,14 +12,18 @@ namespace _HexaMerge.Scripts.RandomGenerator
         public static event SkipGeneratedTile OnSkip;
 
         [SerializeField] private AdSystem AdSystem;
+        
+        public Action<int> ChangeSkipText;
+
 
         private void OnEnable()
         {
             if (PlayerPrefs.HasKey(SkipPrefKey))
                 SkipAmount = PlayerPrefs.GetInt(SkipPrefKey);
         }
+        
 
-        private void OnDisable()
+        private void SaveSkipPrefs()
         {
             PlayerPrefs.SetInt(SkipPrefKey, SkipAmount);
             PlayerPrefs.Save();
@@ -27,19 +31,27 @@ namespace _HexaMerge.Scripts.RandomGenerator
 
         public void SkipTile()
         {
-            if (SkipAmount > 0)
+            if (SkipAmount <= 0)
                 AdSystem.ShowRewardedAd(Skip);
+            else
+            {
+                Skip();
+                SkipAmount--;
+                SaveSkipPrefs();
+                ChangeSkipText?.Invoke(SkipAmount);
+            }
         }
 
         void Skip()
         {
             OnSkip?.Invoke();
-            SkipAmount--;
         }
 
         public void AddSkips(int amount)
         {
             SkipAmount += amount;
+            SaveSkipPrefs();
+            ChangeSkipText?.Invoke(SkipAmount);
         }
 
         public int GetSkips()

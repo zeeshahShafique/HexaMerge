@@ -6,11 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CoinView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/CoinSystem/CoinSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/CoinSystem/CoinSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CoinView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/Interface/SkipTileView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/Interface/SkipTileView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/UI/play button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/UI/play button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Desktop/EventSystem Example/Scripts/HealthBarScripts/HealthBar.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/EventSystem Example/Scripts/HealthBarScripts/PlayerHealthBar.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01fdc326fa5147d6932461a4a4f80d6a810600/06/57719551/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/01/57b758c4/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/11/ca154d76/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/36/6efb8178/InvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,18 +43,20 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/5f/66e4670d/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/ae/cf031c72/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/df/856e9dae/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CoinView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LevelFailed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DebugScripts/MaxDebuggerToggle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/IAPTypeSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/TimeMachine/StartTimeMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/SmallCardView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/ChangeText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -96,10 +110,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32283">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="771">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="32283" />
+      <option name="pid" value="771" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -122,7 +136,9 @@
       <workItem from="1662383302938" duration="2813000" />
       <workItem from="1662443618448" duration="1057000" />
       <workItem from="1662457701409" duration="17433000" />
-      <workItem from="1662553666955" duration="59207000" />
+      <workItem from="1662553666955" duration="76097000" />
+      <workItem from="1663138313446" duration="4957000" />
+      <workItem from="1663145976310" duration="3172000" />
     </task>
     <servers />
   </component>
@@ -150,71 +166,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs</url>
-          <line>88</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" initialLine="88" containingFunctionPresentation="method 'ProcessPurchase'">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" initialLine="34" containingFunctionPresentation="method 'InitLivesSystem'">
             <startOffsets>
-              <option value="2745" />
+              <option value="899" />
             </startOffsets>
             <endOffsets>
-              <option value="2770" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs</url>
-          <line>24</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" initialLine="22" containingFunctionPresentation="method 'PurchaseSuccess'">
-            <startOffsets>
-              <option value="721" />
-            </startOffsets>
-            <endOffsets>
-              <option value="748" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs</url>
-          <line>68</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" initialLine="68" containingFunctionPresentation="method 'PurchaseItemWithId'">
-            <startOffsets>
-              <option value="2047" />
-              <option value="2078" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2077" />
-              <option value="2091" />
+              <option value="922" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs</url>
-          <line>18</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" initialLine="18" containingFunctionPresentation="method 'SetImage'">
-            <startOffsets>
-              <option value="422" />
-            </startOffsets>
-            <endOffsets>
-              <option value="444" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs</url>
-          <line>23</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" initialLine="23" containingFunctionPresentation="method 'SetAmount'">
-            <startOffsets>
-              <option value="504" />
-            </startOffsets>
-            <endOffsets>
-              <option value="534" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

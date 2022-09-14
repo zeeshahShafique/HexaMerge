@@ -67,14 +67,13 @@ namespace _HexaMerge.Scripts.UI.Cards
 
         private void IAPCompleted(bool flag)
         {
-            if (flag)
-                TransactionText.text = $"Transaction Successful\n{Reward.Title}";
-            else
-                TransactionText.text = $"Transaction Cancelled\n{Reward.Title}";
+            TransactionText.text = flag ? $"Transaction Successful\n{Reward.Title}" : $"Transaction Cancelled\n{Reward.Title}";
+            
             TransactionOverlay.DOScale(Vector3.one, 0.2f).OnComplete(() =>
             {
                 TransactionOverlay.DOScale(Vector3.zero, 0.2f).SetEase(Ease.OutQuad).SetDelay(1.5f);
             }).SetEase(Ease.InQuad);
+            
             PurchaseModule.RemovePurchaseCompleteAction(IAPCompleted);
             Button.interactable = true;
             ShopOverlay.gameObject.SetActive(false);
