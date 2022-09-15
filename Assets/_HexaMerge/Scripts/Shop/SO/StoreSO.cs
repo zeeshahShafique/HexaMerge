@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using _HexaMerge.Scripts.Shop;
-using _HexaMerge.Scripts.Shop.Enum;
 using UnityEngine;
 using UnityEngine.Purchasing;
 

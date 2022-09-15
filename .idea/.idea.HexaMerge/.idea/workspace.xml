@@ -6,45 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/House.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/House.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leaf.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leaf.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leafs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leafs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Log.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Log.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Tree.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Purchase Module.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Purchase Module.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine/TimeMachine.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine/TimeMachine.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +130,7 @@
       <workItem from="1662457701409" duration="17433000" />
       <workItem from="1662553666955" duration="76097000" />
       <workItem from="1663138313446" duration="4957000" />
-      <workItem from="1663145976310" duration="25704000" />
+      <workItem from="1663145976310" duration="27161000" />
     </task>
     <servers />
   </component>
@@ -222,10 +188,10 @@
           <line>101</line>
           <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" initialLine="102" containingFunctionPresentation="method 'ShowInterstitialsAd'">
             <startOffsets>
-              <option value="3355" />
+              <option value="3378" />
             </startOffsets>
             <endOffsets>
-              <option value="3438" />
+              <option value="3461" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />

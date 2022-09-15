@@ -19,7 +19,7 @@ public class AdSystem : ScriptableObject
     
     public bool RemoveRVIAP = false;
 
-    public bool RemoveInterIAP = false;
+    public int RemoveInterIAP = 0;
     
     private const string MaxKey = "hlKffQFn1sKXRefAUUKG4o-i-OOURETonfImCKvE29oyDwftIiyhVZMlNNxwUFl8NgUmynX33XOEq5m09yb34Z";
     private const string RewardedAdUnit = "585f249ad115c420";
@@ -35,7 +35,7 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent -= OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent -= OnRewardedAdDisplayFailed;
         MaxSdkCallbacks.OnSdkInitializedEvent -= OnMaxInitialized;
-        RemoveInterIAP = false;
+        RemoveInterIAP = PlayerPrefs.GetInt("RemoveAds");
         AdTimerIndex = 0;
     }
 
@@ -97,7 +97,7 @@ public class AdSystem : ScriptableObject
     public void ShowInterstitialsAd()
     {
         var index = AdTimerIndex;
-        if ((Time.time - _lastLoadedTime) > ADTimerDelay[index] && MaxSdk.IsInterstitialReady(InterstitialAdUnit) && !RemoveInterIAP)
+        if (Time.time - _lastLoadedTime > ADTimerDelay[index] && MaxSdk.IsInterstitialReady(InterstitialAdUnit) && RemoveInterIAP != 1)
         {
             AdTimerIndex = AdTimerIndex < ADTimerDelay.Count-1 ? AdTimerIndex+1 : AdTimerIndex;
             MaxSdk.ShowInterstitial(InterstitialAdUnit);
@@ -159,14 +159,16 @@ public class AdSystem : ScriptableObject
 
     public void RemoveInter()
     {
-        RemoveInterIAP = true;
+        RemoveInterIAP = 1;
         OnInterRemoved?.Invoke();
     }
     
     public void ClearIAP()
     {
-        RemoveInterIAP = false;
+        RemoveInterIAP = 0;
         RemoveRVIAP = false;
+        PlayerPrefs.SetInt("RemoveAds", 0);
+        PlayerPrefs.Save();
     }
 
     public void ResetInterTimer()

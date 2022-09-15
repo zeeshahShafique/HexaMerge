@@ -29,6 +29,7 @@ public class PopulateShop : MonoBehaviour
             }
             else if (rewardItem.ProductType == ProductType.NonConsumable)
             {
+                if (PlayerPrefs.GetInt("RemoveAds") == 1) continue;
                 var obj = Instantiate(NoAdsCard, this.transform);
                 obj.GetComponent<CardView>().SetReward(rewardItem);
             }

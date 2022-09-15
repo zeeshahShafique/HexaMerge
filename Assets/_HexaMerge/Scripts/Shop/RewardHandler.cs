@@ -55,6 +55,8 @@ namespace _HexaMerge.Scripts.Shop
         public void RemoveAds()
         {
             AdSystem.RemoveInter();
+            PlayerPrefs.SetInt("RemoveAds", 1);
+            PlayerPrefs.Save();
         }
 
         public void PurchaseFail(IAPTypeSO iAPItem)
