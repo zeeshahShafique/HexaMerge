@@ -1,11 +1,21 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObject/AdSystem", order = 1, fileName = "AdSystem")]
 public class AdSystem : ScriptableObject
 {
-    public float ADTimerDelay = 30;
+    public List<float> ADTimerDelay = new List<float>(){30, 30, 30};
+
+    public int AdTimerIndex = 0;
+    
     [SerializeField] private float _lastLoadedTime;
+    
+    [SerializeField] private DynamicOverlaySO AdOverlay;
+
+    public delegate void InterRemoved();
+    public static event InterRemoved OnInterRemoved;
+
     
     public bool RemoveRVIAP = false;
 
@@ -24,6 +34,9 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Rewarded.OnAdHiddenEvent -= OnRewardedAdClosedEvent;
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent -= OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent -= OnRewardedAdDisplayFailed;
+        MaxSdkCallbacks.OnSdkInitializedEvent -= OnMaxInitialized;
+        RemoveInterIAP = false;
+        AdTimerIndex = 0;
     }
 
     public void AdSystemInit()
@@ -47,21 +60,19 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += OnRewardedAdClosedEvent;
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent += OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += OnRewardedAdDisplayFailed;
-        
+
 
         LoadRewardedAd();
         LoadInterstitialsAd();
-        _lastLoadedTime = Mathf.NegativeInfinity;
+        _lastLoadedTime = 0;
     }
     
     private void OnMaxInitialized(MaxSdkBase.SdkConfiguration sdkConfiguration)
     {
         if (MaxSdk.IsInitialized()) {
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
-            MaxSdk.ShowMediationDebugger();
-#endif
             Debug.Log("MaxSDK initialized");
         } else {
+            // AdOverlay.EnableOverlay("Weak Internet Connection");
             Debug.Log("Failed to init MaxSDK");
         }
     }
@@ -85,8 +96,10 @@ public class AdSystem : ScriptableObject
     }
     public void ShowInterstitialsAd()
     {
-        if ((Time.time - _lastLoadedTime) > ADTimerDelay && MaxSdk.IsInterstitialReady(InterstitialAdUnit) && !RemoveInterIAP)
+        var index = AdTimerIndex;
+        if ((Time.time - _lastLoadedTime) > ADTimerDelay[index] && MaxSdk.IsInterstitialReady(InterstitialAdUnit) && !RemoveInterIAP)
         {
+            AdTimerIndex = AdTimerIndex < ADTimerDelay.Count-1 ? AdTimerIndex+1 : AdTimerIndex;
             MaxSdk.ShowInterstitial(InterstitialAdUnit);
         }
     }
@@ -131,6 +144,7 @@ public class AdSystem : ScriptableObject
 
     private void OnRewardedAdDisplayFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo, MaxSdkBase.AdInfo adInfo)
     {
+        Debug.LogError($"[ERROR] [AD DISPLAY FAILED] {errorInfo.Message}");
         _onRewardReceived = null;
     }
     
@@ -146,12 +160,18 @@ public class AdSystem : ScriptableObject
     public void RemoveInter()
     {
         RemoveInterIAP = true;
+        OnInterRemoved?.Invoke();
     }
     
     public void ClearIAP()
     {
         RemoveInterIAP = false;
         RemoveRVIAP = false;
+    }
+
+    public void ResetInterTimer()
+    {
+        _lastLoadedTime = Time.time;
     }
     #endregion
 

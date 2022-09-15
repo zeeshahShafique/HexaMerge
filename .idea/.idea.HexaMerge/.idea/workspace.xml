@@ -6,22 +6,45 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CoinView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/CombinedTile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Hexagon Pointed-Top.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/House.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/House.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leaf.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leaf.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leafs.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Leafs.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Log.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Log.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Big Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/NoAds Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/ShopCards/Small Card.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Tree.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/CoinSystem/Coins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Purchase Module.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Purchase Module.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine/TimeMachine.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/TimeMachine/TimeMachine.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/Interface/SkipTileView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/Interface/SkipTileView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/UI/play button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/_Resources/UI/play button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +63,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/d3/1fc7850f/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/f1/c2e377d3/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/d7/9b39992a/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/5f/66e4670d/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/ae/cf031c72/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/df/856e9dae/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LevelFailed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DebugScripts/MaxDebuggerToggle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicShopOverlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Editor/DefaultSceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Merge/MergeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/BigCardRewardItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/IAPTypeSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,7 +164,7 @@
       <workItem from="1662457701409" duration="17433000" />
       <workItem from="1662553666955" duration="76097000" />
       <workItem from="1663138313446" duration="4957000" />
-      <workItem from="1663145976310" duration="3172000" />
+      <workItem from="1663145976310" duration="25704000" />
     </task>
     <servers />
   </component>
@@ -166,25 +192,49 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs</url>
-          <line>27</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" initialLine="34" containingFunctionPresentation="method 'InitLivesSystem'">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" initialLine="66" containingFunctionPresentation="method 'OnIAPButtonPressed'">
             <startOffsets>
-              <option value="899" />
+              <option value="1905" />
             </startOffsets>
             <endOffsets>
-              <option value="922" />
+              <option value="1946" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlaySO.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlaySO.cs" initialLine="20" containingFunctionPresentation="method 'EnableShopOverlayCanvas'">
+            <startOffsets>
+              <option value="578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="606" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs</url>
+          <line>101</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" initialLine="102" containingFunctionPresentation="method 'ShowInterstitialsAd'">
+            <startOffsets>
+              <option value="3355" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3438" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
-        <watch expression="_queue" />
-        <watch expression="_checkList" />
-        <watch expression="_matches" />
+        <watch expression="((UnityEngine.UI.Button) Button).m_OnClick" />
       </configuration>
     </watches-manager>
   </component>

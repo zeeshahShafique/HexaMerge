@@ -1,4 +1,4 @@
-using System.Collections;
+using _HexaMerge.Scripts.DynamicFeedback;
 using _HexaMerge.Scripts.Shop;
 using DG.Tweening;
 using TMPro;
@@ -16,16 +16,21 @@ namespace _HexaMerge.Scripts.UI.Cards
         [SerializeField] protected IAPTypeSO Reward;
 
         [SerializeField] private PurchaseModule PurchaseModule;
-        
-        [SerializeField] private RectTransform TransactionOverlay;
 
-        [SerializeField] private TextMeshProUGUI TransactionText;
+        [SerializeField] private DynamicOverlaySO DynamicOverlay;
 
-        [Header("Shop Overlay Canvas")] [SerializeField]
-        private Canvas ShopOverlay;
+        [SerializeField] private DynamicFeedbackSO DynamicFeedback;
+
+        // [SerializeField] private Canvas ShopOverlayCanvas;
         
         [Header("IAP Button")]
         [SerializeField] private Button Button;
+
+
+        public void SetReward(IAPTypeSO reward)
+        {
+            Reward = reward;
+        }
         
         protected void SetRewardText()
         {
@@ -37,15 +42,24 @@ namespace _HexaMerge.Scripts.UI.Cards
             RewardPrice.text = Reward.Price.ToString();
         }
         
+
         private void OnEnable()
         {
+            // ShopOverlayCanvas = FindObjectOfType<Canvas>();
             Button.onClick.AddListener(OnIAPButtonPressed);
-            
+            Button.onClick.AddListener(PlayFeedback);
         }
 
         private void OnDisable()
         {
             Button.onClick.RemoveListener(OnIAPButtonPressed);
+            Button.onClick.RemoveListener(PlayFeedback);
+        }
+        
+        private void PlayFeedback()
+        {
+            DynamicFeedback.PlayAudioSource(DynamicAudio.CardClick);
+            DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
         }
 
 
@@ -53,31 +67,32 @@ namespace _HexaMerge.Scripts.UI.Cards
         {
             Debug.LogError($"Purchase Module Called");
             Button.interactable = false;
-            StartCoroutine(nameof(Purchase));
-            ShopOverlay.gameObject.SetActive(true);
+            if (!PurchaseModule.MakePurchase(Reward))
+            {
+                Button.interactable = true;
+                return;
+            }
+            // StartCoroutine(nameof(Purchase));
+            // ShopOverlayCanvas.gameObject.SetActive(true);
             PurchaseModule.AddPurchaseCompleteAction(IAPCompleted);
             this.transform.DOPunchScale(Vector3.one * 0.2f, 0.5f, 5, 1f);
         }
 
-        private IEnumerator Purchase()
-        {
-            yield return new WaitForSeconds(0.5f);
-            PurchaseModule.MakePurchase(Reward);
-        }
+        // private IEnumerator Purchase()
+        // {
+        //     yield return new WaitForSeconds(0.2f);
+        //     PurchaseModule.MakePurchase(Reward);
+        // }
 
-        private void IAPCompleted(bool flag)
+        protected virtual void IAPCompleted(bool flag)
         {
-            TransactionText.text = flag ? $"Transaction Successful\n{Reward.Title}" : $"Transaction Cancelled\n{Reward.Title}";
+            var text = flag ? $"Transaction Successful\n{Reward.Title}" : $"Transaction Cancelled\n{Reward.Title}";
             
-            TransactionOverlay.DOScale(Vector3.one, 0.2f).OnComplete(() =>
-            {
-                TransactionOverlay.DOScale(Vector3.zero, 0.2f).SetEase(Ease.OutQuad).SetDelay(1.5f);
-            }).SetEase(Ease.InQuad);
+            DynamicOverlay.EnableClickableOverlay(text);
             
+            // ShopOverlayCanvas.gameObject.SetActive(false);
             PurchaseModule.RemovePurchaseCompleteAction(IAPCompleted);
             Button.interactable = true;
-            ShopOverlay.gameObject.SetActive(false);
-
         }
 
     }

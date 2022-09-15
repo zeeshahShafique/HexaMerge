@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using _HexaMerge.Scripts.Shop;
+using _HexaMerge.Scripts.Shop.Enum;
 using UnityEngine;
 using UnityEngine.Purchasing;
 
@@ -13,13 +14,16 @@ public class StoreSO : ScriptableObject, IStoreListener
 
     public bool IAPInProgress = false;
     
+    [SerializeField] private DynamicOverlaySO StoreNotInitializedOverlay;
+
+    
     
     [NonSerialized] private ConfigurationBuilder _configurationBuilder;
     [NonSerialized] private StandardPurchasingModule _purchasingModule;
     [NonSerialized] private IStoreController _storeController;
     [NonSerialized] private IExtensionProvider _extensionProvider;
     [NonSerialized] private IItemPurchase _purchaseListener;
-    
+
     public bool IsInitialized
     {
         get
@@ -85,6 +89,9 @@ public class StoreSO : ScriptableObject, IStoreListener
         Debug.LogError($"[INFO][IAP] Product purchased. Product: {purchaseEvent.purchasedProduct.definition.id}.");
         
         _purchaseListener?.PurchaseSuccess(GetIAPItem(purchaseEvent.purchasedProduct.definition.id));
+        // var prod = GetIAPItem(purchaseEvent.purchasedProduct.definition.id);
+        // if (prod.ProductType == ProductType.NonConsumable)
+        //     RewardItems.Remove(prod);
 
         _purchaseListener = null;
         IAPInProgress = false;
@@ -94,6 +101,12 @@ public class StoreSO : ScriptableObject, IStoreListener
     public void OnPurchaseFailed(Product product, PurchaseFailureReason failureReason)
     {
         Debug.LogError($"[ERROR][IAP] Product purchase failed. Product: {product.definition.id}. Reason: {failureReason}");
+
+        if (!IsInitialized)
+        {
+            StoreNotInitializedOverlay.EnableClickableOverlay("Weak Internet Connection");
+            Initialize();
+        }
 
         if (failureReason == PurchaseFailureReason.DuplicateTransaction)
         {
@@ -125,20 +138,15 @@ public class StoreSO : ScriptableObject, IStoreListener
         _extensionProvider = extensions;
  
         AssignProductsToItems();
- 
-        // List<IAPRecord> pendingPurchaseRecords = IAPRecordBook.GetPendingRecords();
-        // if (pendingPurchaseRecords != null && pendingPurchaseRecords.Count > 0)
-        // {
-        //     //just going with restoring last pending purchase
-        //     VerifyPurchaseRecord(pendingPurchaseRecords[0]);
-        // }
- 
+        
         RestorePurchases();
     }
 
-    public void RestorePurchases()
+    public bool RestorePurchases()
     {
+        if (!IsInitialized) return false;
         _extensionProvider.GetExtension<IGooglePlayStoreExtensions>().RestoreTransactions(OnTransactionsRestored);
+        return true;
     }
     
     void OnTransactionsRestored(bool success)

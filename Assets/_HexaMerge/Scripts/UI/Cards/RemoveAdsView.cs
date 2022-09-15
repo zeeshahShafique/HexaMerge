@@ -8,5 +8,13 @@ namespace _HexaMerge.Scripts.UI.Cards
             SetRewardSprite();
             SetRewardText();
         }
+
+        protected override void IAPCompleted(bool flag)
+        {
+            base.IAPCompleted(flag);
+            if (flag == true)
+                gameObject.SetActive(false);
+        }
+
     }
 }

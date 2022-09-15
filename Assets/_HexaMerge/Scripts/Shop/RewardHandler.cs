@@ -1,6 +1,7 @@
 using System;
 using _HexaMerge.Scripts.RandomGenerator;
 using _HexaMerge.Scripts.Shop.Enum;
+using UnityEditor.Purchasing;
 using UnityEngine;
 
 namespace _HexaMerge.Scripts.Shop
@@ -21,8 +22,8 @@ namespace _HexaMerge.Scripts.Shop
             {
                 GiveReward(reward);
             }
-
             IAPCompleted?.Invoke(true);
+            AdSystem.ResetInterTimer();
         }
 
         private void GiveReward(Reward reward)

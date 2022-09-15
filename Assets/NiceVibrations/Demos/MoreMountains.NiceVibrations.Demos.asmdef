@@ -1,0 +1,17 @@
+{
+    "name": "MoreMountains.NiceVibrations.Demos",
+    "references": [
+        "GUID:865b414a121ed594e91db2e09f65d38c",
+        "GUID:041029188fa88c54f9efffc039b6a1c9",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
