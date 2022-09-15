@@ -7,10 +7,19 @@
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlayView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlayView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DynamicFeedback/DynamicFeedback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DynamicFeedback/DynamicFeedback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/IItemPurchase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/IItemPurchase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RestorePurchase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RestorePurchase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +38,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/bb/2557d865/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/d3/1fc7850f/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dafed2d51d694b248f56d66f23356b0b157800/f1/c2e377d3/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/81/7fe7f69d/Action.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/d7/9b39992a/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/5f/66e4670d/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e38a6d3ee47c43eb9b2e49c63fc0aa48469000/ae/cf031c72/Environment.cs" root0="SKIP_HIGHLIGHTING" />
@@ -130,7 +140,7 @@
       <workItem from="1662457701409" duration="17433000" />
       <workItem from="1662553666955" duration="76097000" />
       <workItem from="1663138313446" duration="4957000" />
-      <workItem from="1663145976310" duration="27161000" />
+      <workItem from="1663145976310" duration="33702000" />
     </task>
     <servers />
   </component>
@@ -185,13 +195,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs</url>
-          <line>101</line>
+          <line>105</line>
           <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" initialLine="102" containingFunctionPresentation="method 'ShowInterstitialsAd'">
             <startOffsets>
-              <option value="3378" />
+              <option value="3502" />
             </startOffsets>
             <endOffsets>
-              <option value="3461" />
+              <option value="3585" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />

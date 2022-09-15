@@ -16,6 +16,6 @@ MonoBehaviour:
   LivesPrefKey: LivesAmount
   MaxLives: 3
   MaxTimer: 60
-  Timer: 5
-  _idleStartTime: 1663170704
-  _currentTime: 1663170709
+  Timer: 60
+  _idleStartTime: 1663258658
+  _currentTime: 1663258631

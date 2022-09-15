@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MoreMountains.NiceVibrations;
 using UnityEngine;
@@ -11,10 +12,21 @@ public class DynamicFeedback : MonoBehaviour
     [SerializeField] private DynamicFeedbackSO DyFeedback;
 
 
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void OnEnable()
     {
         DyFeedback.PlayAudio += PlayAudio;
         DyFeedback.PlayHaptics += PlayHaptics;
+    }
+
+    private void OnDisable()
+    {
+        DyFeedback.PlayAudio -= PlayAudio;
+        DyFeedback.PlayHaptics -= PlayHaptics;
     }
 
     private void PlayAudio(int id)

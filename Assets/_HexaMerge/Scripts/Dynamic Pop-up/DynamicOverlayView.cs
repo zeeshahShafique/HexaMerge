@@ -16,7 +16,12 @@ public class DynamicOverlayView : MonoBehaviour
     [Header("Tween Settings")]
     [SerializeField] private float OverlayTweenDuration;
     [SerializeField] private Ease OverlayTweenEase;
-    
+
+    private void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void OnEnable()
     {
         OverlayButton.onClick.AddListener(OverlayButtonClicked);
@@ -36,7 +41,6 @@ public class DynamicOverlayView : MonoBehaviour
 
     private void ScaleDownOverlay()
     {
-        OverlayButton.interactable = false;
         OverlayTransform.DOScale(Vector3.zero, OverlayTweenDuration).SetEase(OverlayTweenEase).OnComplete(() =>
         {
             OverlayTransform.gameObject.SetActive(false);

@@ -1,7 +1,6 @@
 using System;
 using _HexaMerge.Scripts.RandomGenerator;
 using _HexaMerge.Scripts.Shop.Enum;
-using UnityEditor.Purchasing;
 using UnityEngine;
 
 namespace _HexaMerge.Scripts.Shop
@@ -15,13 +14,17 @@ namespace _HexaMerge.Scripts.Shop
         
         public Action<bool> IAPCompleted;
 
-        
-        public void PurchaseSuccess(IAPTypeSO iAPItem)
+        public void ProcessRewards(IAPTypeSO iAPItem)
         {
             foreach (var reward in iAPItem.Rewards)
             {
                 GiveReward(reward);
             }
+        }
+
+        
+        public void PurchaseSuccess(IAPTypeSO iAPItem)
+        {
             IAPCompleted?.Invoke(true);
             AdSystem.ResetInterTimer();
         }
@@ -42,17 +45,17 @@ namespace _HexaMerge.Scripts.Shop
             }
         }
 
-        public void AddCoins(int amount)
+        private void AddCoins(int amount)
         {
             CoinSystem.AddCoins(amount);
         }
 
-        public void AddSkips(int amount)
+        private void AddSkips(int amount)
         {
             SkipSystem.AddSkips(amount);
         }
 
-        public void RemoveAds()
+        private void RemoveAds()
         {
             AdSystem.RemoveInter();
             PlayerPrefs.SetInt("RemoveAds", 1);

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using _HexaMerge.Scripts.DynamicFeedback;
 using _HexaMerge.Scripts.Shop;
 using DG.Tweening;
@@ -33,10 +34,18 @@ public class RestorePurchase : MonoBehaviour
 
     private void OnRestorePurchaseButton()
     {
+        Button.interactable = false;
         transform.DOPunchScale(Vector3.one * 0.2f, 0.5f, 5, 0.75f);
         DynamicOverlay.EnableClickableOverlay(PurchaseModule.RestorePurchases()
             ? "Purchase Restored"
             : "No Internet Connection");
+        StartCoroutine(nameof(EnableButton));
+    }
+
+    private IEnumerator EnableButton()
+    {
+        yield return new WaitForSeconds(1);
+        Button.interactable = true;
     }
 
     private void PlayFeedback()

@@ -5,26 +5,26 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObject/AdSystem", order = 1, fileName = "AdSystem")]
 public class AdSystem : ScriptableObject
 {
-    public List<float> ADTimerDelay = new List<float>(){30, 30, 30};
+    [SerializeField] private List<float> AdTimerDelay;
 
-    public int AdTimerIndex = 0;
+    [SerializeField] private int AdTimerIndex = 0;
     
-    [SerializeField] private float _lastLoadedTime;
+    [SerializeField] private float LastLoadedTime;
     
     [SerializeField] private DynamicOverlaySO AdOverlay;
 
-    public delegate void InterRemoved();
-    public static event InterRemoved OnInterRemoved;
+    // public delegate void InterRemoved();
+    // public static event InterRemoved OnInterRemoved;
 
     
-    public bool RemoveRVIAP = false;
+    public bool RemoveRViAP = false;
 
     public int RemoveInterIAP = 0;
     
-    private const string MaxKey = "hlKffQFn1sKXRefAUUKG4o-i-OOURETonfImCKvE29oyDwftIiyhVZMlNNxwUFl8NgUmynX33XOEq5m09yb34Z";
-    private const string RewardedAdUnit = "585f249ad115c420";
-    private const string InterstitialAdUnit = "7d62e5180461f57a";
-    private const string BannerAdUnit = "b56d58800dadb2d1";
+    private const string _maxKey = "hlKffQFn1sKXRefAUUKG4o-i-OOURETonfImCKvE29oyDwftIiyhVZMlNNxwUFl8NgUmynX33XOEq5m09yb34Z";
+    private const string _rewardedAdUnit = "585f249ad115c420";
+    private const string _interstitialAdUnit = "7d62e5180461f57a";
+    private const string _bannerAdUnit = "b56d58800dadb2d1";
 
     private Action _onRewardReceived;
 
@@ -43,14 +43,14 @@ public class AdSystem : ScriptableObject
     {
         string[] adUnitIds = {
             // rewarded
-            RewardedAdUnit,
+            _rewardedAdUnit,
             // interstitial
-            InterstitialAdUnit,
+            _interstitialAdUnit,
             // banner
-            BannerAdUnit
+            _bannerAdUnit
         };
 
-        MaxSdk.SetSdkKey(MaxKey);
+        MaxSdk.SetSdkKey(_maxKey);
         MaxSdk.SetUserId(SystemInfo.deviceUniqueIdentifier);
         MaxSdk.SetVerboseLogging(true);
         MaxSdkCallbacks.OnSdkInitializedEvent += OnMaxInitialized;
@@ -64,14 +64,17 @@ public class AdSystem : ScriptableObject
 
         LoadRewardedAd();
         LoadInterstitialsAd();
-        _lastLoadedTime = 0;
+        LastLoadedTime = 0;
     }
     
     private void OnMaxInitialized(MaxSdkBase.SdkConfiguration sdkConfiguration)
     {
-        if (MaxSdk.IsInitialized()) {
+        if (MaxSdk.IsInitialized()) 
+        {
             Debug.Log("MaxSDK initialized");
-        } else {
+        } 
+        else 
+        {
             // AdOverlay.EnableOverlay("Weak Internet Connection");
             Debug.Log("Failed to init MaxSDK");
         }
@@ -86,21 +89,22 @@ public class AdSystem : ScriptableObject
     
     private void OnInterstitialsAdClosedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
-        _lastLoadedTime = Time.time;
+        LastLoadedTime = Time.time;
         LoadInterstitialsAd();
     }
 
     private void LoadInterstitialsAd()
     {
-        MaxSdk.LoadInterstitial(InterstitialAdUnit);
+        MaxSdk.LoadInterstitial(_interstitialAdUnit);
     }
     public void ShowInterstitialsAd()
     {
+        // AdOverlay.EnableOverlayButton($"Remove Ads Value: {RemoveInterIAP}");
         var index = AdTimerIndex;
-        if (Time.time - _lastLoadedTime > ADTimerDelay[index] && MaxSdk.IsInterstitialReady(InterstitialAdUnit) && RemoveInterIAP != 1)
+        if (Time.time - LastLoadedTime > AdTimerDelay[index] && MaxSdk.IsInterstitialReady(_interstitialAdUnit) && RemoveInterIAP != 1)
         {
-            AdTimerIndex = AdTimerIndex < ADTimerDelay.Count-1 ? AdTimerIndex+1 : AdTimerIndex;
-            MaxSdk.ShowInterstitial(InterstitialAdUnit);
+            AdTimerIndex = AdTimerIndex < AdTimerDelay.Count-1 ? AdTimerIndex+1 : AdTimerIndex;
+            MaxSdk.ShowInterstitial(_interstitialAdUnit);
         }
     }
 
@@ -111,7 +115,7 @@ public class AdSystem : ScriptableObject
 
     private void LoadRewardedAd()
     {
-        MaxSdk.LoadRewardedAd(RewardedAdUnit);
+        MaxSdk.LoadRewardedAd(_rewardedAdUnit);
     }
     public void ShowRVAd()
     {
@@ -120,13 +124,13 @@ public class AdSystem : ScriptableObject
     public void ShowRewardedAd(Action callback)
     {
         _onRewardReceived = callback;
-        if (MaxSdk.IsRewardedAdReady(RewardedAdUnit) && !RemoveRVIAP) // && (Time.time - _lastLoadedTime) > ADTimerDelay)
+        if (MaxSdk.IsRewardedAdReady(_rewardedAdUnit) && !RemoveRViAP) // && (Time.time - _lastLoadedTime) > ADTimerDelay)
         {
-            MaxSdk.ShowRewardedAd(RewardedAdUnit);
+            MaxSdk.ShowRewardedAd(_rewardedAdUnit);
             return;
         }
 
-        if (!RemoveRVIAP) return;
+        if (!RemoveRViAP) return;
         _onRewardReceived?.Invoke();
     }
     private void OnRewardedAdReceivedRewardEvent(string adUnitId, MaxSdk.Reward reward, MaxSdkBase.AdInfo adInfo)
@@ -137,7 +141,7 @@ public class AdSystem : ScriptableObject
     
     private void OnRewardedAdClosedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
-        _lastLoadedTime = Time.time;
+        LastLoadedTime = Time.time;
         _onRewardReceived = null;
         LoadRewardedAd();
     }
@@ -154,26 +158,26 @@ public class AdSystem : ScriptableObject
     #region IAP
     public void RemoveRV()
     {
-        RemoveRVIAP = true;
+        RemoveRViAP = true;
     }
 
     public void RemoveInter()
     {
         RemoveInterIAP = 1;
-        OnInterRemoved?.Invoke();
+        // OnInterRemoved?.Invoke();
     }
     
     public void ClearIAP()
     {
         RemoveInterIAP = 0;
-        RemoveRVIAP = false;
+        RemoveRViAP = false;
         PlayerPrefs.SetInt("RemoveAds", 0);
         PlayerPrefs.Save();
     }
 
     public void ResetInterTimer()
     {
-        _lastLoadedTime = Time.time;
+        LastLoadedTime = Time.time;
     }
     #endregion
 

@@ -8,13 +8,16 @@ using UnityEngine.Purchasing;
 [CreateAssetMenu(menuName = "ScriptableObject/IAPs/Store", order = 1)]
 public class StoreSO : ScriptableObject, IStoreListener
 {
+    [Header("Rewards Config")]
     public List<IAPTypeSO> RewardItems;
     [SerializeField] private FakeStoreUIMode FakeStoreUIMode;
 
-    public bool IAPInProgress = false;
-    
-    [SerializeField] private DynamicOverlaySO StoreNotInitializedOverlay;
+    [SerializeField] private RewardHandler RewardHandler;
 
+    public bool IAPInProgress = false;
+
+    [Header("Dynamic Overlay")]
+    [SerializeField] private DynamicOverlaySO StoreNotInitializedOverlay;
     
     
     [NonSerialized] private ConfigurationBuilder _configurationBuilder;
@@ -87,8 +90,9 @@ public class StoreSO : ScriptableObject, IStoreListener
     {
         Debug.LogError($"[INFO][IAP] Product purchased. Product: {purchaseEvent.purchasedProduct.definition.id}.");
         
-        _purchaseListener?.PurchaseSuccess(GetIAPItem(purchaseEvent.purchasedProduct.definition.id));
-        // var prod = GetIAPItem(purchaseEvent.purchasedProduct.definition.id);
+        var prod = GetIAPItem(purchaseEvent.purchasedProduct.definition.id);
+        RewardHandler.ProcessRewards(prod);
+        _purchaseListener.PurchaseSuccess(prod);
         // if (prod.ProductType == ProductType.NonConsumable)
         //     RewardItems.Remove(prod);
 
@@ -111,6 +115,7 @@ public class StoreSO : ScriptableObject, IStoreListener
         {
             var prod = GetIAPItem(product.definition.id);
             _purchaseListener?.PurchaseSuccess(prod);
+            RewardHandler.ProcessRewards(prod);
         }
         else
         {
