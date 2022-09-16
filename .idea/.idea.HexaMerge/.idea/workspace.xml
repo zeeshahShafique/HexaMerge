@@ -6,20 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/Shop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/CoinAmountBG.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/CoinAmountBG.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/DynamicOverlayCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/DynamicOverlayCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/AdSystem/AdSystem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/Shop/Store.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlayView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlayView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DynamicFeedback/DynamicFeedback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/DynamicFeedback/DynamicFeedback.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/IItemPurchase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/IItemPurchase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/RewardHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/SO/StoreSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RestorePurchase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RestorePurchase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadGameLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicShopOverlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicShopOverlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PopulateShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Shop/PurchaseModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/BigCardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/BigCardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/RemoveAdsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/SmallCardView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/SmallCardView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/CoinView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/LivesView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/LivesView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,22 +78,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.57069844&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.build.unityPlugin&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.57069844",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "rider.run.widget.enabled.cache": "false",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="20" />
@@ -112,10 +119,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="771">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1116">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="771" />
+      <option name="pid" value="1116" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -140,7 +147,8 @@
       <workItem from="1662457701409" duration="17433000" />
       <workItem from="1662553666955" duration="76097000" />
       <workItem from="1663138313446" duration="4957000" />
-      <workItem from="1663145976310" duration="33702000" />
+      <workItem from="1663145976310" duration="33988000" />
+      <workItem from="1663207789733" duration="10579000" />
     </task>
     <servers />
   </component>
@@ -168,19 +176,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs</url>
-          <line>69</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" initialLine="66" containingFunctionPresentation="method 'OnIAPButtonPressed'">
-            <startOffsets>
-              <option value="1905" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1946" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlaySO.cs</url>
           <line>20</line>
           <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Dynamic Pop-up/DynamicOverlaySO.cs" initialLine="20" containingFunctionPresentation="method 'EnableShopOverlayCanvas'">
@@ -194,17 +189,17 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" initialLine="102" containingFunctionPresentation="method 'ShowInterstitialsAd'">
+          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs</url>
+          <line>64</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/Cards/CardView.cs" initialLine="73" containingFunctionPresentation="lambda expression inside method 'OnIAPButtonPressed'">
             <startOffsets>
-              <option value="3502" />
+              <option value="1852" />
             </startOffsets>
             <endOffsets>
-              <option value="3585" />
+              <option value="1893" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

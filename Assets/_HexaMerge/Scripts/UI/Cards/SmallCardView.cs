@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SmallCardView : CardView
+public class SmallCardView : StoreItemCardView
 {
     [SerializeField] private TextMeshProUGUI RewardAmount;
     

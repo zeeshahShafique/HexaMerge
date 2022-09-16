@@ -34,6 +34,7 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Rewarded.OnAdHiddenEvent -= OnRewardedAdClosedEvent;
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent -= OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent -= OnRewardedAdDisplayFailed;
+        MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent -= OnRewardedAdLoadFailed;
         MaxSdkCallbacks.OnSdkInitializedEvent -= OnMaxInitialized;
         RemoveInterIAP = PlayerPrefs.GetInt("RemoveAds");
         AdTimerIndex = 0;
@@ -117,21 +118,29 @@ public class AdSystem : ScriptableObject
     {
         MaxSdk.LoadRewardedAd(_rewardedAdUnit);
     }
+
+    private void OnRewardedAdLoadFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo)
+    {
+        AdOverlay.EnableClickableOverlay($"Ad not Available\n{errorInfo.Message}");
+        Debug.LogError($"[ERROR] [AD LOAD FAILED] {errorInfo.Message}");
+        _onRewardReceived = null;
+    }
     public void ShowRVAd()
     {
         ShowRewardedAd(null);
     }
-    public void ShowRewardedAd(Action callback)
+    public bool ShowRewardedAd(Action callback)
     {
         _onRewardReceived = callback;
         if (MaxSdk.IsRewardedAdReady(_rewardedAdUnit) && !RemoveRViAP) // && (Time.time - _lastLoadedTime) > ADTimerDelay)
         {
             MaxSdk.ShowRewardedAd(_rewardedAdUnit);
-            return;
+            return true;
         }
 
-        if (!RemoveRViAP) return;
+        if (!RemoveRViAP) return false;
         _onRewardReceived?.Invoke();
+        return true;
     }
     private void OnRewardedAdReceivedRewardEvent(string adUnitId, MaxSdk.Reward reward, MaxSdkBase.AdInfo adInfo)
     {
@@ -148,6 +157,7 @@ public class AdSystem : ScriptableObject
 
     private void OnRewardedAdDisplayFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo, MaxSdkBase.AdInfo adInfo)
     {
+        AdOverlay.EnableClickableOverlay($"Ad not Available\n{errorInfo.Message}");
         Debug.LogError($"[ERROR] [AD DISPLAY FAILED] {errorInfo.Message}");
         _onRewardReceived = null;
     }

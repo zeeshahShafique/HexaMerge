@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: afe4a3836f199437ca62ec0fb13df9c1, type: 2}
   - {fileID: 11400000, guid: 88eaa712b3a664a8e9e98a957fbe7a64, type: 2}
   - {fileID: 11400000, guid: e70d3b8e8e3f1446aba9b6969951f5b0, type: 2}
+  - {fileID: 11400000, guid: 92305a713a8174b14ba59aeca3a50a24, type: 2}
   FakeStoreUIMode: 1
   RewardHandler: {fileID: 11400000, guid: 6f3a157235a6547c5bc73105fb507b24, type: 2}
   IAPInProgress: 0

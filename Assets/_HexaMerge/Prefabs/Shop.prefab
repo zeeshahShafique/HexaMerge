@@ -512,6 +512,7 @@ MonoBehaviour:
   SmallCard: {fileID: 7394781563299718723, guid: 9872b9eaeff4e4d40ab7a51a60a56227, type: 3}
   BigCard: {fileID: 9183047843163742753, guid: a1e18c60e986948968566f309a6aa461, type: 3}
   NoAdsCard: {fileID: 7394781563299718723, guid: afd08c96e978840869c4e5e4121cfb46, type: 3}
+  RvAdCard: {fileID: 7394781563299718723, guid: 1182c010a2e9247d0b02b720e66458d0, type: 3}
 --- !u!1 &5603554289529915862
 GameObject:
   m_ObjectHideFlags: 0

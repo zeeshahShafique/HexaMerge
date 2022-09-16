@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BigCardView : CardView
+public class BigCardView : StoreItemCardView
 {
     [Header("BIG CARD ITEMS")] 
     [SerializeField] private RectTransform RewardItems;

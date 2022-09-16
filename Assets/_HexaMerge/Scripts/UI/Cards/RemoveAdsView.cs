@@ -12,7 +12,7 @@ namespace _HexaMerge.Scripts.UI.Cards
         protected override void IAPCompleted(bool flag)
         {
             base.IAPCompleted(flag);
-            if (flag == true)
+            if (flag)
                 gameObject.SetActive(false);
         }
 

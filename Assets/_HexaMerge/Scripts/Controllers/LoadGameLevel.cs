@@ -1,18 +1,35 @@
 using System.Collections;
+using _HexaMerge.Scripts.DynamicFeedback;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadGameLevel : MonoBehaviour
 {
     private bool _playPressed;
     [SerializeField] private LivesSystem LivesSystem;
 
-    [SerializeField] private RectTransform LivesOverlay;
+    [SerializeField] private DynamicFeedbackSO DynamicFeedback;
+
+    [SerializeField] private DynamicOverlaySO DynamicOverlay;
+
+    [SerializeField] private Button PlayButton;
 
     private void Start()
     {
         _playPressed = false;
         StartCoroutine(LoadGameSceneAsync());
+    }
+
+    private void OnEnable()
+    {
+        PlayButton.onClick.AddListener(LoadGame);
+    }
+
+    private void OnDisable()
+    {
+        PlayButton.onClick.RemoveListener(LoadGame);
     }
 
     IEnumerator LoadGameSceneAsync(bool allowActive = false)
@@ -29,11 +46,19 @@ public class LoadGameLevel : MonoBehaviour
 
     public void LoadGame()
     {
-        if (LivesSystem.HasLives())
+        PlayButton.gameObject.transform.DOPunchScale(Vector3.one * 0.2f, 0.2f, 2, 1f).OnComplete(() =>
         {
-            LivesSystem.ReduceLives(1);
-            _playPressed = true;
-        }
+            DynamicFeedback.PlayAudioSource(DynamicAudio.ButtonClick);
+            DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
+            if (LivesSystem.HasLives())
+            {
+                LivesSystem.ReduceLives(1);
+                _playPressed = true;
+                return;
+            }
+
+            DynamicOverlay.EnableClickableOverlay("No Lives Available");
+        });
         // else
         // {
         //     LivesOverlay.DOScale(Vector3.one, 0.2f).OnComplete(() =>

@@ -27,7 +27,6 @@ namespace _HexaMerge.Scripts.Shop
 
         public void AddPurchaseCompleteAction(Action<bool> purchaseComplete)
         {
-            DynamicOverlay.EnableShopOverlayCanvas();
             Rewards.IAPCompleted += purchaseComplete;
         }
         
