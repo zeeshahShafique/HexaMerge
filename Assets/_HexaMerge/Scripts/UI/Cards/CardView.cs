@@ -1,5 +1,4 @@
 using _HexaMerge.Scripts.DynamicFeedback;
-using _HexaMerge.Scripts.Shop;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -67,6 +66,7 @@ namespace _HexaMerge.Scripts.UI.Cards
                 {
                     return;
                 }
+                DynamicOverlay.DisableShopOverlayCanvas();
                 Button.interactable = true;
             });
         }

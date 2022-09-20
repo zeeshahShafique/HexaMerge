@@ -42,7 +42,7 @@ public class CoinView : MonoBehaviour
         ShopButton.interactable = false;
         DynamicFeedback.PlayAudioSource(DynamicAudio.ButtonClick);
         DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
-        
+
         transform.DOPunchScale(Vector3.one * 0.2f, 0.2f, 2, 1f).OnComplete(() =>
         {
             ShopButton.interactable = true;

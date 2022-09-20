@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 909718337595531718}
   - component: {fileID: 909718337595531715}
   - component: {fileID: 909718337595531716}
-  - component: {fileID: 909718337595531714}
   - component: {fileID: 5939837075033734647}
+  - component: {fileID: 3931801375141558520}
   m_Layer: 5
   m_Name: EnergyTimer
   m_TagString: Untagged
@@ -79,21 +79,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &909718337595531714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909718337595531719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db11fbe1c634ee0948e544f76a2f876, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LivesText: {fileID: 0}
-  TimerText: {fileID: 909718337604313782}
-  LivesSystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
 --- !u!114 &5939837075033734647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +123,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3931801375141558520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909718337595531719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a206499f80a040d089edd7a1639985b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimerText: {fileID: 909718337604313782}
+  LivesSystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
 --- !u!1 &909718337604313784
 GameObject:
   m_ObjectHideFlags: 0

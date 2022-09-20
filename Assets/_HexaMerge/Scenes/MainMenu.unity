@@ -1618,7 +1618,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6091863355293403200, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 27.78003
+      value: 27.779785
       objectReference: {fileID: 0}
     - target: {fileID: 6091863355515145584, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
       propertyPath: m_Pivot.x
@@ -1710,11 +1710,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091863356125454465, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 27.239014
+      value: 27.23877
       objectReference: {fileID: 0}
     - target: {fileID: 6091863356344778358, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -135.32996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091863356745636264, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -14.224121
       objectReference: {fileID: 0}
     - target: {fileID: 6091863357081092227, guid: 3a261cc57e2d82f47aab50e5c1074e02, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2421,6 +2425,7 @@ GameObject:
   - component: {fileID: 874652624}
   - component: {fileID: 874652623}
   - component: {fileID: 874652622}
+  - component: {fileID: 874652626}
   m_Layer: 5
   m_Name: Horizontal Scroll Snap
   m_TagString: Untagged
@@ -2571,6 +2576,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874652620}
   m_CullTransparentMesh: 1
+--- !u!114 &874652626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874652620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: -200, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &879649232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,13 +6433,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1124142422}
     m_Modifications:
+    - target: {fileID: 909718337595531714, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
+      propertyPath: SnapRect
+      value: 
+      objectReference: {fileID: 874652621}
     - target: {fileID: 909718337595531718, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 909718337595531718, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 909718337595531718, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
       propertyPath: m_RootOrder
@@ -6484,7 +6507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 909718337595531718, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 940
       objectReference: {fileID: 0}
     - target: {fileID: 909718337595531718, guid: ac8c3f4cee9b047b9bd2f337cd4c2af3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6531,13 +6554,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5603554287747157173, guid: 69a2ca457b9d944398149d1a9a014165, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 5603554287747157174, guid: 69a2ca457b9d944398149d1a9a014165, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 961.9
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 5603554289056526572, guid: 69a2ca457b9d944398149d1a9a014165, type: 3}
       propertyPath: ParentScrollRect

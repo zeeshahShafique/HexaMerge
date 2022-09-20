@@ -19,4 +19,9 @@ public class DynamicFeedbackSO : ScriptableObject
         int id = (int) haptics;
         PlayHaptics?.Invoke(id);
     }
+
+    public void PlayAudioSourceByID(int id)
+    {
+        PlayAudio?.Invoke(id);
+    }
 }

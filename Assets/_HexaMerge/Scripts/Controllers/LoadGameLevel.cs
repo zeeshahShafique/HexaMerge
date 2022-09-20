@@ -56,7 +56,6 @@ public class LoadGameLevel : MonoBehaviour
                 _playPressed = true;
                 return;
             }
-
             DynamicOverlay.EnableClickableOverlay("No Lives Available");
         });
         // else

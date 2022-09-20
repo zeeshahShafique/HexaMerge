@@ -13,9 +13,6 @@ public class AdSystem : ScriptableObject
     
     [SerializeField] private DynamicOverlaySO AdOverlay;
 
-    // public delegate void InterRemoved();
-    // public static event InterRemoved OnInterRemoved;
-
     
     public bool RemoveRViAP = false;
 
@@ -61,8 +58,9 @@ public class AdSystem : ScriptableObject
         MaxSdkCallbacks.Rewarded.OnAdHiddenEvent += OnRewardedAdClosedEvent;
         MaxSdkCallbacks.Interstitial.OnAdHiddenEvent += OnInterstitialsAdClosedEvent;
         MaxSdkCallbacks.Rewarded.OnAdDisplayFailedEvent += OnRewardedAdDisplayFailed;
+        MaxSdkCallbacks.Rewarded.OnAdLoadFailedEvent += OnRewardedAdLoadFailed;
 
-
+        
         LoadRewardedAd();
         LoadInterstitialsAd();
         LastLoadedTime = 0;
@@ -100,6 +98,11 @@ public class AdSystem : ScriptableObject
     }
     public void ShowInterstitialsAd()
     {
+        if (!IsAdSystemInitialized())
+        {
+            AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
+            return;
+        }
         // AdOverlay.EnableOverlayButton($"Remove Ads Value: {RemoveInterIAP}");
         var index = AdTimerIndex;
         if (Time.time - LastLoadedTime > AdTimerDelay[index] && MaxSdk.IsInterstitialReady(_interstitialAdUnit) && RemoveInterIAP != 1)
@@ -121,7 +124,7 @@ public class AdSystem : ScriptableObject
 
     private void OnRewardedAdLoadFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo)
     {
-        AdOverlay.EnableClickableOverlay($"Ad not Available\n{errorInfo.Message}");
+        AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
         Debug.LogError($"[ERROR] [AD LOAD FAILED] {errorInfo.Message}");
         _onRewardReceived = null;
     }
@@ -131,6 +134,11 @@ public class AdSystem : ScriptableObject
     }
     public bool ShowRewardedAd(Action callback)
     {
+        if (!IsAdSystemInitialized() && !RemoveRViAP)
+        {
+            AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
+            return false;
+        }
         _onRewardReceived = callback;
         if (MaxSdk.IsRewardedAdReady(_rewardedAdUnit) && !RemoveRViAP) // && (Time.time - _lastLoadedTime) > ADTimerDelay)
         {
@@ -157,7 +165,7 @@ public class AdSystem : ScriptableObject
 
     private void OnRewardedAdDisplayFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo, MaxSdkBase.AdInfo adInfo)
     {
-        AdOverlay.EnableClickableOverlay($"Ad not Available\n{errorInfo.Message}");
+        AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
         Debug.LogError($"[ERROR] [AD DISPLAY FAILED] {errorInfo.Message}");
         _onRewardReceived = null;
     }

@@ -16,13 +16,7 @@ namespace _HexaMerge.Scripts.Shop
 
         public bool MakePurchase(IAPTypeSO iap)
         {
-            if (!Store.IsInitialized)
-            {
-                DynamicOverlay.EnableClickableOverlay("Weak Internet Connection");
-                return false;
-            }
-            Store.PurchaseItemWithId(iap.SKU, Rewards);
-            return true;
+            return Store.PurchaseItemWithId(iap.SKU, Rewards);
         }
 
         public void AddPurchaseCompleteAction(Action<bool> purchaseComplete)

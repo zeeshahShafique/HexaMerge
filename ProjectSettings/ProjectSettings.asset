@@ -767,7 +767,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: RH_SerializedDictionary;LK_HAS_LION_ANALYTICS;HAS_APPLOVIN_CROSS_PROMO_SDK;HAS_LION_APPLOVIN_SDK;MOREMOUNTAINS_NICEVIBRATIONS
-    Standalone: RH_SerializedDictionary
+    Standalone: RH_SerializedDictionary;MOREMOUNTAINS_NICEVIBRATIONS
     iPhone: LK_HAS_LION_ANALYTICS
   additionalCompilerArguments: {}
   platformArchitecture: {}

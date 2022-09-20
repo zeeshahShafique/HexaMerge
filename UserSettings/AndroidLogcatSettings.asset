@@ -1,17 +1,65 @@
 {
-    "m_SelectedDeviceId": "ce071717507794ec0d7e",
+    "m_SelectedDeviceId": "R5CR1249ZMY",
     "m_SelectedPackage": {
-        "deviceId": "ce071717507794ec0d7e",
+        "deviceId": "R5CR1249ZMY",
         "name": "com.thunderzone.eye",
-        "processId": 15281,
+        "processId": 18757,
         "exited": false
     },
-    "m_SelectedPriority": 4,
+    "m_SelectedPriority": 1,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "ce071717507794ec0d7e",
             "name": "com.thunderzone.eye",
             "processId": 15281,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.wavetec.vendimapp",
+            "processId": 27824,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.sec.android.app.launcher",
+            "processId": 4031,
+            "exited": false
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.sec.android.app.myfiles",
+            "processId": 29152,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.sec.android.app.launcher",
+            "processId": 4592,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 4675,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 7369,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 17689,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 18757,
             "exited": false
         }
     ],
@@ -23,7 +71,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -39,7 +87,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",

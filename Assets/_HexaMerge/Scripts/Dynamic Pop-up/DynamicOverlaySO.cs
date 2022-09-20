@@ -8,6 +8,7 @@ public class DynamicOverlaySO : ScriptableObject
     public Action<string> EnableOverlayButton;
     public Action EnableShopOverlay;
     public Action DisableShopOverlay;
+    public Action<RectTransform> EnableAddEnergyOverlay;
 
     [ContextMenu("Enable Overlay")]
     public void EnableClickableOverlay(string text)
@@ -25,4 +26,11 @@ public class DynamicOverlaySO : ScriptableObject
     {
         DisableShopOverlay?.Invoke();   
     }
+
+    public void AddEnergyOverlay(RectTransform snapRect)
+    {
+        EnableAddEnergyOverlay?.Invoke(snapRect);
+    }
+    
+    
 }

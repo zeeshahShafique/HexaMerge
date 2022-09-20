@@ -17,8 +17,8 @@ public class LoadMainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // AdSystem.AdSystemInit();
-        // Store.Initialize();
+        AdSystem.AdSystemInit();
+        Store.Initialize();
         LoadTimer = 5;
         StartCoroutine(LoadSceneAsync());
     }

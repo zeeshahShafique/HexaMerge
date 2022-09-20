@@ -15,3 +15,4 @@ MonoBehaviour:
   Grid: {fileID: 11400000, guid: c079e29e80375477db2086e7dc3abdd1, type: 2}
   CellSprite: {fileID: 21300000, guid: eb35e6ec6b6a3467bbd8404ec5d302fe, type: 3}
   TierConfig: {fileID: 11400000, guid: b3afb1aed3f5b46c18cd32ce766f504e, type: 2}
+  DynamicFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}

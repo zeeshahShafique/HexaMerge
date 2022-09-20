@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3076e3737fb481e8e379ac36a45c3d, type: 3}
   m_Name: SkipTileSystem
   m_EditorClassIdentifier: 
-  SkipAmount: 5
+  SkipAmount: 9992
   SkipPrefKey: SkipsAmount
+  AdSkipsAmount: 1
   AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}

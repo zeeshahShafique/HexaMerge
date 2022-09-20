@@ -1,4 +1,3 @@
-using System;
 using _HexaMerge.Scripts.Shop;
 using TMPro;
 using UnityEngine;
@@ -23,6 +22,7 @@ namespace _HexaMerge.Scripts.UI.Cards
         protected override bool PurchaseItem()
         {
             DynamicOverlay.DisableShopOverlayCanvas();
+            Button.interactable = true;
             return AdSystem.ShowRewardedAd(GiveRewards);
         }
 

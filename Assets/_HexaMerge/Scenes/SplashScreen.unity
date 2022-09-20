@@ -229,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 6946751080649886714, guid: 3770ed1aa9e344de29e3e38b02b74f25, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 17777004}
     - target: {fileID: 6946751080649886715, guid: 3770ed1aa9e344de29e3e38b02b74f25, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -368,7 +368,7 @@ PrefabInstance:
     - target: {fileID: 7406907895546737514, guid: 627903fb6b53b49359e5b4d4f98b6ab0, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 17777004}
     - target: {fileID: 7921045776928864309, guid: 627903fb6b53b49359e5b4d4f98b6ab0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -938,48 +938,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicFeedback
       objectReference: {fileID: 0}
-    - target: {fileID: 4279688486112206690, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279688486526576620, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
---- !u!1 &1293389361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4279688484897340879, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
-  m_PrefabInstance: {fileID: 1293389360}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1293389362 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4279688486526576620, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
-  m_PrefabInstance: {fileID: 1293389360}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1293389363 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4279688486112206690, guid: 0d58d5605ea8f4c62ad7179c88237f41, type: 3}
-  m_PrefabInstance: {fileID: 1293389360}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1293389364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293389361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316790c47e5dc4c93866a7852d2453aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioSources:
-  - {fileID: 1293389363}
-  - {fileID: 1293389362}
-  Haptics: 080000000100000003000000
-  DyFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}
 --- !u!1 &1600260157
 GameObject:
   m_ObjectHideFlags: 0

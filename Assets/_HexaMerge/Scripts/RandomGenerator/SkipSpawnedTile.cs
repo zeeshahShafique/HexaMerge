@@ -8,6 +8,7 @@ namespace _HexaMerge.Scripts.RandomGenerator
     {
         [SerializeField] private int SkipAmount = 5;
         [SerializeField] private String SkipPrefKey;
+        [SerializeField] private int AdSkipsAmount;
         public delegate void SkipGeneratedTile();
         public static event SkipGeneratedTile OnSkip;
 
@@ -31,15 +32,20 @@ namespace _HexaMerge.Scripts.RandomGenerator
 
         public void SkipTile()
         {
-            if (SkipAmount <= 0)
-                AdSystem.ShowRewardedAd(Skip);
-            else
-            {
-                Skip();
-                SkipAmount--;
-                SaveSkipPrefs();
-                ChangeSkipText?.Invoke(SkipAmount);
-            }
+            Skip();
+            SkipAmount--;
+            SaveSkipPrefs();
+            ChangeSkipText?.Invoke(SkipAmount);
+        }
+
+        public void AddSkipsThroughAd()
+        {
+            AdSystem.ShowRewardedAd(AddSkipsAd);
+        }
+
+        private void AddSkipsAd()
+        {
+            AddSkips(AdSkipsAmount);
         }
 
         void Skip()

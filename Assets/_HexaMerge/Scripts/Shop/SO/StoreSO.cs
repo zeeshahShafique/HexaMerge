@@ -71,7 +71,13 @@ public class StoreSO : ScriptableObject, IStoreListener
     
     public bool PurchaseItemWithId(string id, IItemPurchase purchaseListener)
     {
-        if (!IsInitialized) return false;
+        if (!IsInitialized)
+        {
+            #if UNITY_EDITOR
+                StoreNotInitializedOverlay.EnableClickableOverlay("STORE NOT AVAILABLE!");
+            #endif
+            return false;
+        }
         if (_purchaseListener != null) return false;
 
         _purchaseListener = purchaseListener;

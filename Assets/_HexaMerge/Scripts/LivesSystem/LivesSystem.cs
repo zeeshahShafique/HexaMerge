@@ -19,6 +19,9 @@ public class LivesSystem : ScriptableObject
     public Action<int> ChangeTimerText;
     public Action SetFullText;
 
+    [SerializeField] private AdSystem AdSystem;
+    [SerializeField] private Coins CoinSystem;
+
     public void InitLivesSystem()
     {
         if (PlayerPrefs.HasKey(LivesPrefKey))
@@ -41,7 +44,7 @@ public class LivesSystem : ScriptableObject
     public void OnTickEvent()
     {
         if (!_isTimerActive) return;
-        if (Timer > 0)
+        if (Timer > 0 && !IsFull())
         {
             ChangeTimerText?.Invoke(Timer);
             Timer--;
@@ -57,14 +60,13 @@ public class LivesSystem : ScriptableObject
         // Reset Timer.
         _isTimerActive = false;
         Timer = MaxTimer;
-            
-        // Add a life in the lives system.
-        AddLives(1);
-            
-        // Restart timer if Lives are not full.
-        // else set _isFull true;
+
         if (!IsFull())
         {
+            // Add a life in the lives system.
+            AddLives(1);
+            
+            // Restart timer if Lives are not full.
             StartTimer(MaxTimer);
             return;
         }
@@ -87,10 +89,13 @@ public class LivesSystem : ScriptableObject
     {
         _currentTime = GetEpochTime();
         var time = _currentTime - _idleStartTime;
+        time += MaxTimer - Timer;
         while (time > MaxTimer && !IsFull())
         {
             AddLives(1);
-            time -= 60;
+            time -= MaxTimer;
+            StartTimer(time);
+            return;
         }
 
         if (IsFull())
@@ -98,7 +103,7 @@ public class LivesSystem : ScriptableObject
             _isTimerActive = false;
             return;
         }
-        StartTimer(time);
+        StartTimer(MaxTimer - time);
     }
     private void StartTimer(int time)
     {
@@ -106,10 +111,11 @@ public class LivesSystem : ScriptableObject
         _isTimerActive = true;
     }
 
-    private void AddLives(int amount)
+    public void AddLives(int amount)
     {
         if (IsFull()) return;
         LivesAmount += amount;
+        Timer = MaxTimer;
         SaveLivesPref();
         ChangeLivesText?.Invoke(LivesAmount);
     }
@@ -123,6 +129,26 @@ public class LivesSystem : ScriptableObject
         ChangeLivesText?.Invoke(LivesAmount);
     }
 
+    public void BuyEnergy()
+    {
+        if (CoinSystem.GetCoins() > 200)
+        {
+            CoinSystem.RemoveCoins(200);
+            RefillEnergy();
+        }
+    }
+    
+    public void AddRewardAdLives()
+    {
+        AdSystem.ShowRewardedAd(RefillEnergy);
+    }
+
+    private void RefillEnergy()
+    {
+        var energy = MaxLives - LivesAmount;
+        AddLives(energy);
+    }
+
     public bool HasLives()
     {
         return LivesAmount > 0;
@@ -132,11 +158,16 @@ public class LivesSystem : ScriptableObject
         return LivesAmount;
     }
 
+    public int GetMaxLives()
+    {
+        return MaxLives;
+    }
+
     public int GetMaxTimer()
     {
         return MaxTimer;
     }
-    private bool IsFull()
+    public bool IsFull()
     {
         return LivesAmount == MaxLives;
     }
