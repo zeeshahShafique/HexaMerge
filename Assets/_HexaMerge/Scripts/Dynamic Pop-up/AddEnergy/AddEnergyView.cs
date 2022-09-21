@@ -12,7 +12,7 @@ public class AddEnergyView : MonoBehaviour
 
     [SerializeField] private RectTransform AddEnergyPanel;
 
-    [SerializeField] private LivesSystem EnergySystem;
+    [SerializeField] private EnergySystem EnergySystem;
 
     [SerializeField] private DynamicOverlaySO DynamicOverlay;
 

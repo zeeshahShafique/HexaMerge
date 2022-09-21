@@ -1,4 +1,3 @@
-using System;
 using _HexaMerge.Scripts.NodeStateMachine.Interface;
 using _HexaMerge.Scripts.NodeStateMachine.States;
 using _HexaMerge.Scripts.RandomGenerator;
@@ -24,6 +23,8 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     [SerializeField] private Sprite CellSprite;
 
     [SerializeField] private MergeSystem MergeSystem;
+
+    [SerializeField] private GameObject RotationArrows;
     
 
     // Cache objects bellow.
@@ -171,10 +172,15 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     }
     private void SpawnNewTile()
     {
+        var obj = _tile;
         if(_tile)
             Destroy(_tile);
-        var range = new Random();
-        _tile = Instantiate(TilePrefab[range.Next(TilePrefab.Length)], CacheTilePos, Quaternion.identity, this.transform);
+        do
+        {
+            var range = new Random();
+            _tile = Instantiate(TilePrefab[range.Next(TilePrefab.Length)], CacheTilePos, Quaternion.identity, this.transform);
+        } while (_tile == obj);
+        RotationArrows.SetActive(_tile.CompareTag("CombinedTile"));
     }
     private void Return(GameObject tile)
     {

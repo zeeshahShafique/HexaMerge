@@ -7,18 +7,18 @@ namespace _HexaMerge.Scripts.UI
     {
         [SerializeField] private TextMeshProUGUI TimerText;
 
-        [SerializeField] private LivesSystem LivesSystem;
+        [SerializeField] private EnergySystem EnergySystem;
 
         private void OnEnable()
         {
-            LivesSystem.ChangeTimerText += UpdateTimerText;
-            LivesSystem.SetFullText += UpdateText;
+            EnergySystem.ChangeTimerText += UpdateTimerText;
+            EnergySystem.SetFullText += UpdateText;
         }
 
         private void OnDisable()
         {
-            LivesSystem.ChangeTimerText -= UpdateTimerText;
-            LivesSystem.SetFullText -= UpdateText;
+            EnergySystem.ChangeTimerText -= UpdateTimerText;
+            EnergySystem.SetFullText -= UpdateText;
         }
         
         private void UpdateTimerText(int timer)

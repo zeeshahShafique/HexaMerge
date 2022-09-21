@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class LoadGameLevel : MonoBehaviour
 {
     private bool _playPressed;
-    [SerializeField] private LivesSystem LivesSystem;
+    [SerializeField] private EnergySystem EnergySystem;
 
     [SerializeField] private DynamicFeedbackSO DynamicFeedback;
 
@@ -50,9 +50,9 @@ public class LoadGameLevel : MonoBehaviour
         {
             DynamicFeedback.PlayAudioSource(DynamicAudio.ButtonClick);
             DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
-            if (LivesSystem.HasLives())
+            if (EnergySystem.HasLives())
             {
-                LivesSystem.ReduceLives(1);
+                EnergySystem.ReduceLives(1);
                 _playPressed = true;
                 return;
             }

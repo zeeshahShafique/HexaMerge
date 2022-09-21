@@ -9,9 +9,8 @@ namespace _HexaMerge.Scripts.UI
     public class LivesView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI LivesText;
-        // [SerializeField] private TextMeshProUGUI TimerText;
 
-        [SerializeField] private LivesSystem LivesSystem;
+        [SerializeField] private EnergySystem EnergySystem;
 
         [SerializeField] private Button AddLifeButton;
         [SerializeField] private DynamicOverlaySO DynamicOverlay;
@@ -21,21 +20,21 @@ namespace _HexaMerge.Scripts.UI
 
         private void OnEnable()
         {
-            LivesSystem.ChangeLivesText += SetLivesView;
+            EnergySystem.ChangeLivesText += SetLivesView;
             
             AddLifeButton.onClick.AddListener(OnButtonPressed);
         }
 
         private void OnDisable()
         {
-            LivesSystem.ChangeLivesText -= SetLivesView;
+            EnergySystem.ChangeLivesText -= SetLivesView;
             
             AddLifeButton.onClick.RemoveListener(OnButtonPressed);
         }
 
         private void Start()
         {
-            SetLivesView(LivesSystem.GetLives());
+            SetLivesView(EnergySystem.GetLives());
             DontDestroyOnLoad(this);
         }
 
@@ -43,7 +42,7 @@ namespace _HexaMerge.Scripts.UI
         {
             DynamicFeedback.PlayAudioSource(DynamicAudio.ButtonClick);
             DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
-            if (LivesSystem.IsFull())
+            if (EnergySystem.IsFull())
             {
                 DynamicOverlay.EnableClickableOverlay("Lives Already Full");
             }
@@ -59,13 +58,13 @@ namespace _HexaMerge.Scripts.UI
         public void OnApplicationPause(bool pauseStatus)
         {
             if (pauseStatus)
-                LivesSystem.SaveLivesPref();
+                EnergySystem.SaveLivesPref();
         }
 
         private void OnApplicationFocus(bool hasFocus)
         {
             if (hasFocus)
-                LivesSystem.InitLivesSystem();
+                EnergySystem.InitLivesSystem();
         }
         
         private void SetLivesView(int amount)

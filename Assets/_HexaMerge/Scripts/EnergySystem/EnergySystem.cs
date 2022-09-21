@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObject/LivesSystem", order = 1)]
-public class LivesSystem : ScriptableObject
+public class EnergySystem : ScriptableObject
 {
     [SerializeField] private int LivesAmount = 3;
     [SerializeField] private string LivesPrefKey;
@@ -12,8 +12,8 @@ public class LivesSystem : ScriptableObject
     public int Timer;
     private bool _isTimerActive = false;
 
-    [SerializeField] private int _idleStartTime;
-    [SerializeField] private int _currentTime;
+    [SerializeField] private int IdleStartTime;
+    [SerializeField] private int CurrentTime;
 
     public Action<int> ChangeLivesText;
     public Action<int> ChangeTimerText;
@@ -27,7 +27,7 @@ public class LivesSystem : ScriptableObject
         if (PlayerPrefs.HasKey(LivesPrefKey))
             LivesAmount = PlayerPrefs.GetInt(LivesPrefKey);
         if (PlayerPrefs.HasKey("IdleStartTime"))
-            _idleStartTime = PlayerPrefs.GetInt("IdleStartTime");
+            IdleStartTime = PlayerPrefs.GetInt("IdleStartTime");
         IdleLivesRestoration();
     }
 
@@ -76,8 +76,8 @@ public class LivesSystem : ScriptableObject
     public void SaveLivesPref()
     {
         PlayerPrefs.SetInt(LivesPrefKey, LivesAmount);
-        _idleStartTime = GetEpochTime();
-        PlayerPrefs.SetInt("IdleStartTime", _idleStartTime);
+        IdleStartTime = GetEpochTime();
+        PlayerPrefs.SetInt("IdleStartTime", IdleStartTime);
         PlayerPrefs.Save();
     }
     private int GetEpochTime()
@@ -87,8 +87,8 @@ public class LivesSystem : ScriptableObject
     }
     private void IdleLivesRestoration()
     {
-        _currentTime = GetEpochTime();
-        var time = _currentTime - _idleStartTime;
+        CurrentTime = GetEpochTime();
+        var time = CurrentTime - IdleStartTime;
         time += MaxTimer - Timer;
         while (time > MaxTimer && !IsFull())
         {

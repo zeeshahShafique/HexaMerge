@@ -39,12 +39,12 @@ public class AddSkipsView : MonoBehaviour
         BuySkipsButton.onClick.AddListener(OnBuySkipsButton);
         
 
-        TouchSystemTransform.DOLocalMove(Vector3.left * 100, 0.5f).SetEase(Ease.OutCirc);
-        GridSystemTransform.DOLocalMove(Vector3.left * 100, 0.5f).SetEase(Ease.OutCirc);
+        TouchSystemTransform.DOLocalMove(Vector3.left * 30, 0.5f).SetEase(Ease.OutCirc);
+        GridSystemTransform.DOLocalMove(Vector3.left * 30, 0.5f).SetEase(Ease.OutCirc);
         ButtonsTransform.DOLocalMove(Vector3.left * 3000, 0.5f).SetEase(Ease.OutCirc);
         TileControllerTransform.DOLocalMove(Vector3.left * 3000, 0.5f).SetEase(Ease.OutCirc).OnComplete(() =>
         {
-            transform.DOLocalMove(Vector3.zero, 0.5f).SetEase(Ease.InCirc);
+            transform.DOLocalMove(Vector3.zero, 0.2f).SetEase(Ease.InFlash);
         });
     }
 
@@ -73,7 +73,7 @@ public class AddSkipsView : MonoBehaviour
         DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
         CloseButton.transform.DOPunchScale(Vector3.one * 0.2f, 0.5f, 5, 0.75f);
 
-        transform.DOLocalMove(Vector3.right * 1125, 0.5f).SetEase(Ease.OutCirc).OnComplete(() =>
+        transform.DOLocalMove(Vector3.right * 1125, 0.2f).SetEase(Ease.OutFlash).OnComplete(() =>
         {
             GridSystemTransform.DOLocalMove(Vector3.zero, 0.5f).SetEase(Ease.InCirc);
             ButtonsTransform.DOLocalMove(Vector3.zero, 0.5f).SetEase(Ease.InCirc);

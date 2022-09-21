@@ -101,6 +101,7 @@ public class AdSystem : ScriptableObject
         if (!IsAdSystemInitialized())
         {
             AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
+            AdSystemInit();
             return;
         }
         // AdOverlay.EnableOverlayButton($"Remove Ads Value: {RemoveInterIAP}");
@@ -137,6 +138,7 @@ public class AdSystem : ScriptableObject
         if (!IsAdSystemInitialized() && !RemoveRViAP)
         {
             AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
+            AdSystemInit();
             return false;
         }
         _onRewardReceived = callback;
