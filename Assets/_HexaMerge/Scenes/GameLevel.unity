@@ -1960,7 +1960,6 @@ MonoBehaviour:
   HighlightSprite: {fileID: 21300000, guid: 6690982850664499ba0c4ceb67bd3053, type: 3}
   CellSprite: {fileID: 21300000, guid: eb35e6ec6b6a3467bbd8404ec5d302fe, type: 3}
   MergeSystem: {fileID: 11400000, guid: 9b26f21a503fe4810977a8068a1e5794, type: 2}
-  DynamicFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}
 --- !u!4 &701032256
 Transform:
   m_ObjectHideFlags: 0

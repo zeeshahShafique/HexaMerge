@@ -54,7 +54,7 @@ public class StoreSO : ScriptableObject, IStoreListener
             _purchasingModule.useFakeStoreUIMode = FakeStoreUIMode;
  
             _configurationBuilder = ConfigurationBuilder.Instance(_purchasingModule);
-            _configurationBuilder.AddProducts(RewardItems.Select(x => x.ProductDefinition));
+            _configurationBuilder.AddProducts(RewardItems.Select(x => x.ProductDefinition).Where(x => x.id is not ""));
         }
     }
     

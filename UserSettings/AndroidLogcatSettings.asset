@@ -1,25 +1,13 @@
 {
-    "m_SelectedDeviceId": "R5CR1249ZMY",
+    "m_SelectedDeviceId": "ce071717507794ec0d7e",
     "m_SelectedPackage": {
-        "deviceId": "R5CR1249ZMY",
-        "name": "com.thunderzone.eye",
-        "processId": 18757,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 1,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.thunderzone.eye",
-            "processId": 15281,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.wavetec.vendimapp",
-            "processId": 27824,
-            "exited": false
-        },
         {
             "deviceId": "ce071717507794ec0d7e",
             "name": "com.sec.android.app.launcher",
@@ -28,9 +16,27 @@
         },
         {
             "deviceId": "ce071717507794ec0d7e",
-            "name": "com.sec.android.app.myfiles",
-            "processId": 29152,
-            "exited": false
+            "name": "com.thunderzone.eye",
+            "processId": 9618,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 13595,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 15291,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.google.android.packageinstaller",
+            "processId": 19249,
+            "exited": true
         },
         {
             "deviceId": "R5CR1249ZMY",
@@ -60,6 +66,18 @@
             "deviceId": "R5CR1249ZMY",
             "name": "com.thunderzone.eye",
             "processId": 18757,
+            "exited": false
+        },
+        {
+            "deviceId": "988b5a483241363957",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3623,
+            "exited": false
+        },
+        {
+            "deviceId": "988b5a483241363957",
+            "name": "com.thunderzone.eye",
+            "processId": 14394,
             "exited": false
         }
     ],
