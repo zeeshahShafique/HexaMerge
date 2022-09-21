@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/EnergyTimer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/EnergyTimer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/Lives.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/Lives.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/SkipTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Prefabs/UI/SkipTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/SplashScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/LivesSystem/Lives System.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Ads/AdSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Controllers/LoadMainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/EnergySystem/EnergySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/EnergySystem/EnergySystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/LivesView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/UI/LivesView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,22 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.57069844&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.57069844",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RiderProblemsViewState">
     <hideBySeverity>
       <option value="20" />
@@ -150,6 +134,7 @@
       <workItem from="1663207789733" duration="14766000" />
       <workItem from="1663501798348" duration="21794000" />
       <workItem from="1663740856219" duration="7653000" />
+      <workItem from="1663751916280" duration="544000" />
     </task>
     <servers />
   </component>
@@ -217,15 +202,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/EnergySystem/EnergySystem.cs</url>
-          <line>142</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" initialLine="129" containingFunctionPresentation="method 'AddRewardAdLives'">
-            <startOffsets>
-              <option value="3741" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3779" />
-            </endOffsets>
-          </properties>
+          <line>141</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/LivesSystem/LivesSystem.cs" initialLine="129" containingFunctionPresentation="method 'AddRewardAdLives'" />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -266,19 +244,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_HexaMerge/Scripts/EnergySystem/EnergySystem.cs</url>
-          <line>95</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/EnergySystem/EnergySystem.cs" initialLine="93" containingFunctionPresentation="method 'IdleLivesRestoration'">
-            <startOffsets>
-              <option value="2561" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2586" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
