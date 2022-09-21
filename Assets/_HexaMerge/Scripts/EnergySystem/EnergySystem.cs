@@ -91,14 +91,10 @@ public class EnergySystem : ScriptableObject
         CurrentTime = GetEpochTime();
         Timer = PlayerPrefs.GetInt("EnergyTimer");
         var time = CurrentTime - IdleStartTime;
-        Debug.LogError($"Time Before Addition: {time}");
-        Debug.LogError($"MaxTimer: {MaxTimer} ; Timer: {Timer}");
-        Debug.LogError($"Time After Addition: {time}");
         while (time + (MaxTimer - Timer) > MaxTimer && !IsFull())
         {
             AddLives(1);
             time -= MaxTimer;
-            StartTimer(time);
             return;
         }
 

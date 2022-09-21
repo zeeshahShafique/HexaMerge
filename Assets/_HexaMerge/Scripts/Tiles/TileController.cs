@@ -1,3 +1,4 @@
+using _HexaMerge.Scripts.DynamicFeedback;
 using _HexaMerge.Scripts.NodeStateMachine.Interface;
 using _HexaMerge.Scripts.NodeStateMachine.States;
 using _HexaMerge.Scripts.RandomGenerator;
@@ -23,6 +24,8 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
     [SerializeField] private Sprite CellSprite;
 
     [SerializeField] private MergeSystem MergeSystem;
+
+    [SerializeField] private DynamicFeedbackSO DynamicFeedback;
 
     [SerializeField] private GameObject RotationArrows;
     
@@ -137,12 +140,15 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
                 _tile.transform.GetChild(0).SetParent(Grid.Nodes[Grid.NodeInfo[(Vector2)indices[i]].Index].transform);
                 Grid.OccupiedCount++;
             }
-
+            
+            DynamicFeedback.PlayAudioSource(DynamicAudio.TileClick);
+            DynamicFeedback.PlayHapticsSource(DynamicHaptics.SoftImpact);
+            
             for (int i = 0; i < indices.Length; i++)
             {
                 MergeSystem.SearchTiles((Vector2)indices[i], sprites[i]);
             }
-
+            
             SpawnNewTile();
             ClearGridHighlight();
             return true;

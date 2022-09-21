@@ -73,9 +73,9 @@ public class StoreSO : ScriptableObject, IStoreListener
     {
         if (!IsInitialized)
         {
-            #if UNITY_EDITOR
-                StoreNotInitializedOverlay.EnableClickableOverlay("STORE NOT AVAILABLE!");
-            #endif
+            // #if UNITY_EDITOR
+            StoreNotInitializedOverlay.EnableClickableOverlay("STORE NOT AVAILABLE!");
+            // #endif
             return false;
         }
         if (_purchaseListener != null) return false;

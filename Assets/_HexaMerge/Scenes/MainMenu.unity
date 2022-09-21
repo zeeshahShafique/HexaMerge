@@ -2473,12 +2473,12 @@ MonoBehaviour:
   Pagination: {fileID: 0}
   PrevButton: {fileID: 0}
   NextButton: {fileID: 0}
-  transitionSpeed: 10
+  transitionSpeed: 20
   UseHardSwipe: 0
   UseFastSwipe: 1
   UseSwipeDeltaThreshold: 0
-  FastSwipeThreshold: 35
-  SwipeVelocityThreshold: 35
+  FastSwipeThreshold: 10
+  SwipeVelocityThreshold: 10
   SwipeDeltaThreshold: 2
   UseTimeScale: 0
   MaskArea: {fileID: 0}
