@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e5a3ea85e134a5da0735b89a736a41, type: 3}
   m_Name: GridData
   m_EditorClassIdentifier: 
+  NodesPositions: []
+  Nodes: []
+  OccupiedCount: 0
+  IsFull: 0

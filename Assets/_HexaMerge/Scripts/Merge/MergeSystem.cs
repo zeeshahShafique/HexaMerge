@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _HexaMerge.Scripts.DynamicFeedback;
 using _HexaMerge.Scripts.Enums;
 using _HexaMerge.Scripts.MergeSystem.MergeStateMachine.States;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class MergeSystem : ScriptableObject
     [SerializeField] private Sprite CellSprite;
 
     [SerializeField] private TileTierConfig TierConfig;
+
+    [SerializeField] private DynamicFeedbackSO DynamicFeedback;
     
     private List<int> _checkList = new();
 
@@ -37,6 +40,8 @@ public class MergeSystem : ScriptableObject
         if (_matches.Count > 2)
         {
             MergeTiles(tile);
+            DynamicFeedback.PlayAudioSource(DynamicAudio.Match3);
+            DynamicFeedback.PlayHapticsSource(DynamicHaptics.Success);
             SearchTiles(tile, _sprite);
         }
     }
@@ -86,6 +91,7 @@ public class MergeSystem : ScriptableObject
             spriteRenderer.color = _color;
             
             Destroy(Grid.Nodes[_matches[i]].transform.GetChild(0).gameObject);
+            Grid.OccupiedCount--;
         }
     }
 }

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37a8172bc2444b6a8f3b8f37d70eb8d, type: 3}
+  m_Name: DynamicFeedback
+  m_EditorClassIdentifier: 
+  AudioSources:
+  - {fileID: 846010826824588254, guid: 2b91366c897ee47c2990ea48fc473494, type: 3}
+  - {fileID: 4017522749620357567, guid: b6aa9258e657c4372b9ea33114c4eb47, type: 3}
+  Haptics: 040000000100000003000000

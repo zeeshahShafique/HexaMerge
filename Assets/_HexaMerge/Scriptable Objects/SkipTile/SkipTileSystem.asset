@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3076e3737fb481e8e379ac36a45c3d, type: 3}
+  m_Name: SkipTileSystem
+  m_EditorClassIdentifier: 
+  SkipAmount: 0
+  SkipPrefKey: SkipsAmount
+  AdSkipsAmount: 1
+  AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
+  PurchaseModule: {fileID: 11400000, guid: 2067e18a492a147f8bd836dc98abb11b, type: 2}
+  SpecialPack: {fileID: 11400000, guid: 88eaa712b3a664a8e9e98a957fbe7a64, type: 2}
