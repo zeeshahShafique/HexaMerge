@@ -5187,7 +5187,10 @@ MonoBehaviour:
   ButtonsTransform: {fileID: 1704687154}
   TileControllerTransform: {fileID: 701032256}
   CloseButton: {fileID: 1571018800}
+  FreeSkipButton: {fileID: 1653359545}
+  BuySkipsButton: {fileID: 1062942332}
   DynamicFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}
+  SkipSystem: {fileID: 11400000, guid: dd540b86e829549cbbaa1cd8bed60f45, type: 2}
 --- !u!1 &2030219964
 GameObject:
   m_ObjectHideFlags: 0

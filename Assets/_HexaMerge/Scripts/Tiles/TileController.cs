@@ -174,7 +174,7 @@ public class TileController : MonoBehaviour, IDrag, ITap, INodeState
         if(_tile)
             Destroy(_tile);
         var range = new Random();
-        _tile = Instantiate(TilePrefab[range.Next(TilePrefab.Length)], CacheTilePos, Quaternion.identity);
+        _tile = Instantiate(TilePrefab[range.Next(TilePrefab.Length)], CacheTilePos, Quaternion.identity, this.transform);
     }
     private void Return(GameObject tile)
     {

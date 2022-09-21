@@ -44,7 +44,10 @@ namespace _HexaMerge.Scripts.RandomGenerator.Interface
 
         private void ChangeSkipView(int amount)
         {
-            SkipText.text = amount.ToString();
+            if (amount > 0)
+                SkipText.text = amount.ToString();
+            else
+                SkipText.text = "+";
         }
 
         private void Awake()

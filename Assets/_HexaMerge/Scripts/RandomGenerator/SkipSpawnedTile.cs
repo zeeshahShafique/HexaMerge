@@ -1,4 +1,5 @@
 using System;
+using _HexaMerge.Scripts.Shop;
 using UnityEngine;
 
 namespace _HexaMerge.Scripts.RandomGenerator
@@ -13,6 +14,11 @@ namespace _HexaMerge.Scripts.RandomGenerator
         public static event SkipGeneratedTile OnSkip;
 
         [SerializeField] private AdSystem AdSystem;
+
+        [SerializeField]
+        private PurchaseModule PurchaseModule;
+
+        [SerializeField] private IAPTypeSO SpecialPack;
         
         public Action<int> ChangeSkipText;
 
@@ -41,6 +47,11 @@ namespace _HexaMerge.Scripts.RandomGenerator
         public void AddSkipsThroughAd()
         {
             AdSystem.ShowRewardedAd(AddSkipsAd);
+        }
+
+        public void BuySkips()
+        {
+            PurchaseModule.MakePurchase(SpecialPack);
         }
 
         private void AddSkipsAd()

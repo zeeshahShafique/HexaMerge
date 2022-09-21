@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "ce071717507794ec0d7e",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "ce071717507794ec0d7e",
+        "name": "com.thunderzone.eye",
+        "processId": 4701,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -17,18 +17,6 @@
         {
             "deviceId": "ce071717507794ec0d7e",
             "name": "com.thunderzone.eye",
-            "processId": 9618,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.thunderzone.eye",
-            "processId": 13595,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.thunderzone.eye",
             "processId": 15291,
             "exited": true
         },
@@ -37,6 +25,24 @@
             "name": "com.google.android.packageinstaller",
             "processId": 19249,
             "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.Slack",
+            "processId": 11723,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.samsung.android.MtpApplication",
+            "processId": 3683,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 4701,
+            "exited": false
         },
         {
             "deviceId": "R5CR1249ZMY",
