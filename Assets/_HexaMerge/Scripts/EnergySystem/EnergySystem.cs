@@ -4,10 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObject/LivesSystem", order = 1)]
 public class EnergySystem : ScriptableObject
 {
-    [SerializeField] private int LivesAmount = 3;
-    [SerializeField] private string LivesPrefKey;
+    [SerializeField] private int EnergyAmount = 3;
+    [SerializeField] private string EnergyPrefKey;
     
-    [SerializeField] private int MaxLives;
+    [SerializeField] private int MaxEnergy;
     [SerializeField] private int MaxTimer; // In seconds
     public int Timer;
     private bool _isTimerActive = false;
@@ -24,8 +24,8 @@ public class EnergySystem : ScriptableObject
 
     public void InitLivesSystem()
     {
-        if (PlayerPrefs.HasKey(LivesPrefKey))
-            LivesAmount = PlayerPrefs.GetInt(LivesPrefKey);
+        if (PlayerPrefs.HasKey(EnergyPrefKey))
+            EnergyAmount = PlayerPrefs.GetInt(EnergyPrefKey);
         if (PlayerPrefs.HasKey("IdleStartTime"))
             IdleStartTime = PlayerPrefs.GetInt("IdleStartTime");
         IdleLivesRestoration();
@@ -75,9 +75,10 @@ public class EnergySystem : ScriptableObject
 
     public void SaveLivesPref()
     {
-        PlayerPrefs.SetInt(LivesPrefKey, LivesAmount);
+        PlayerPrefs.SetInt(EnergyPrefKey, EnergyAmount);
         IdleStartTime = GetEpochTime();
         PlayerPrefs.SetInt("IdleStartTime", IdleStartTime);
+        PlayerPrefs.SetInt("EnergyTimer", Timer);
         PlayerPrefs.Save();
     }
     private int GetEpochTime()
@@ -88,8 +89,12 @@ public class EnergySystem : ScriptableObject
     private void IdleLivesRestoration()
     {
         CurrentTime = GetEpochTime();
+        Timer = PlayerPrefs.GetInt("EnergyTimer");
         var time = CurrentTime - IdleStartTime;
+        Debug.LogError($"Time Before Addition: {time}");
+        Debug.LogError($"MaxTimer: {MaxTimer} ; Timer: {Timer}");
         time += MaxTimer - Timer;
+        Debug.LogError($"Time After Addition: {time}");
         while (time > MaxTimer && !IsFull())
         {
             AddLives(1);
@@ -101,9 +106,10 @@ public class EnergySystem : ScriptableObject
         if (IsFull())
         {
             _isTimerActive = false;
+            Timer = MaxTimer;
             return;
         }
-        StartTimer(MaxTimer - time);
+        StartTimer(Timer - time);
     }
     private void StartTimer(int time)
     {
@@ -114,19 +120,19 @@ public class EnergySystem : ScriptableObject
     public void AddLives(int amount)
     {
         if (IsFull()) return;
-        LivesAmount += amount;
+        EnergyAmount += amount;
         Timer = MaxTimer;
         SaveLivesPref();
-        ChangeLivesText?.Invoke(LivesAmount);
+        ChangeLivesText?.Invoke(EnergyAmount);
     }
     
     public void ReduceLives(int amount)
     {
         if (!HasLives()) return;
-        LivesAmount -= amount;
+        EnergyAmount -= amount;
         StartTimer(Timer);
         SaveLivesPref();
-        ChangeLivesText?.Invoke(LivesAmount);
+        ChangeLivesText?.Invoke(EnergyAmount);
     }
 
     public void BuyEnergy()
@@ -145,22 +151,22 @@ public class EnergySystem : ScriptableObject
 
     private void RefillEnergy()
     {
-        var energy = MaxLives - LivesAmount;
+        var energy = MaxEnergy - EnergyAmount;
         AddLives(energy);
     }
 
     public bool HasLives()
     {
-        return LivesAmount > 0;
+        return EnergyAmount > 0;
     }
     public int GetLives()
     {
-        return LivesAmount;
+        return EnergyAmount;
     }
 
     public int GetMaxLives()
     {
-        return MaxLives;
+        return MaxEnergy;
     }
 
     public int GetMaxTimer()
@@ -169,7 +175,7 @@ public class EnergySystem : ScriptableObject
     }
     public bool IsFull()
     {
-        return LivesAmount == MaxLives;
+        return EnergyAmount == MaxEnergy;
     }
     
 }

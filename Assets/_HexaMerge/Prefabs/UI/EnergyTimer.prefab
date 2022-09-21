@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 909718337604313782}
-  LivesSystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
+  EnergySystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
 --- !u!1 &909718337604313784
 GameObject:
   m_ObjectHideFlags: 0

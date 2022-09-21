@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace _HexaMerge.Scripts.UI
 {
-    public class LivesView : MonoBehaviour
+    public class EnergyView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI LivesText;
 

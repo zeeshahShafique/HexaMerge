@@ -227,6 +227,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkipSystem: {fileID: 11400000, guid: dd540b86e829549cbbaa1cd8bed60f45, type: 2}
   SkipText: {fileID: 2177475058536260554}
+  DynamicFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}
+  SkipOverlay: {fileID: 0}
+  SkipButton: {fileID: 0}
 --- !u!1 &2177475058536260556
 GameObject:
   m_ObjectHideFlags: 0

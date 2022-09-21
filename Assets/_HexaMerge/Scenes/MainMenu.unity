@@ -1371,8 +1371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 10
+    m_Right: 10
     m_Top: 0
     m_Bottom: 100
   m_ChildAlignment: 7
@@ -1762,7 +1762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &630372298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027dc034adcc84ba6844c2cbf517831f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LivesSystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
+  EnergySystem: {fileID: 11400000, guid: 87a4801a363e643cba4af101b156f47a, type: 2}
   DynamicFeedback: {fileID: 11400000, guid: 310706981954740558381c3893baede2, type: 2}
   DynamicOverlay: {fileID: 11400000, guid: 797a22f424cfa4fdbb4a1478cc444466, type: 2}
   PlayButton: {fileID: 2079046972}
@@ -3420,7 +3420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1228018785
 RectTransform:
   m_ObjectHideFlags: 0

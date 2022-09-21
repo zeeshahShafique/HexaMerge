@@ -125,7 +125,7 @@ public class AdSystem : ScriptableObject
 
     private void OnRewardedAdLoadFailed(string adUnitId, MaxSdk.ErrorInfo errorInfo)
     {
-        AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
+        // AdOverlay.EnableClickableOverlay($"AD NOT AVAILABLE, TRY AGAIN LATER");
         Debug.LogError($"[ERROR] [AD LOAD FAILED] {errorInfo.Message}");
         _onRewardReceived = null;
     }

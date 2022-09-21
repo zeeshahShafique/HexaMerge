@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R5CR1249ZMY",
         "name": "com.thunderzone.eye",
-        "processId": 5595,
+        "processId": 19777,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -53,12 +53,6 @@
         {
             "deviceId": "R5CR1249ZMY",
             "name": "com.thunderzone.eye",
-            "processId": 17689,
-            "exited": true
-        },
-        {
-            "deviceId": "R5CR1249ZMY",
-            "name": "com.thunderzone.eye",
             "processId": 18757,
             "exited": true
         },
@@ -78,6 +72,12 @@
             "deviceId": "R5CR1249ZMY",
             "name": "com.thunderzone.eye",
             "processId": 5595,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 19777,
             "exited": false
         },
         {

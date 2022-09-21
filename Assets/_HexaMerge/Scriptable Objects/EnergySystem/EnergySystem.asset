@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b2c49e80a7c94fe6b97275e73f1a418, type: 3}
-  m_Name: Lives System
+  m_Name: EnergySystem
   m_EditorClassIdentifier: 
-  LivesAmount: 1
-  LivesPrefKey: LivesAmount
-  MaxLives: 3
+  EnergyAmount: 0
+  EnergyPrefKey: EnergyPref
+  MaxEnergy: 3
   MaxTimer: 300
   Timer: 0
-  _idleStartTime: 1663689018
-  _currentTime: 1663688997
+  IdleStartTime: 1663769802
+  CurrentTime: 1663769808
   AdSystem: {fileID: 11400000, guid: 5190f7fc2bbd44c969267f6ed01349fd, type: 2}
   CoinSystem: {fileID: 11400000, guid: 1a62550c6b00149d0a43f5a5ac2c4fe7, type: 2}
