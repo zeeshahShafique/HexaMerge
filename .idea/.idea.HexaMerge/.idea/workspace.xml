@@ -7,11 +7,8 @@
     <list default="true" id="2cee9fcb-fd67-436f-88fb-605adeb5f7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HexaMerge/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scenes/GameLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/SkipTile/SkipTileSystem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scriptable Objects/SkipTile/SkipTileSystem.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/AddSkipsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/AddSkipsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipSpawnedTile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/RandomGenerator/SkipTileView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Tiles/TileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_HexaMerge/Scripts/Tiles/TileController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +136,7 @@
       <workItem from="1663145976310" duration="33988000" />
       <workItem from="1663207789733" duration="14766000" />
       <workItem from="1663501798348" duration="21794000" />
-      <workItem from="1663740856219" duration="2547000" />
+      <workItem from="1663740856219" duration="2799000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "ce071717507794ec0d7e",
     "m_SelectedPackage": {
-        "deviceId": "ce071717507794ec0d7e",
-        "name": "com.thunderzone.eye",
-        "processId": 4701,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -16,24 +16,6 @@
         },
         {
             "deviceId": "ce071717507794ec0d7e",
-            "name": "com.thunderzone.eye",
-            "processId": 15291,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.google.android.packageinstaller",
-            "processId": 19249,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
-            "name": "com.Slack",
-            "processId": 11723,
-            "exited": true
-        },
-        {
-            "deviceId": "ce071717507794ec0d7e",
             "name": "com.samsung.android.MtpApplication",
             "processId": 3683,
             "exited": true
@@ -42,6 +24,24 @@
             "deviceId": "ce071717507794ec0d7e",
             "name": "com.thunderzone.eye",
             "processId": 4701,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 22125,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 24200,
+            "exited": true
+        },
+        {
+            "deviceId": "ce071717507794ec0d7e",
+            "name": "com.thunderzone.eye",
+            "processId": 24664,
             "exited": false
         },
         {
@@ -49,12 +49,6 @@
             "name": "com.sec.android.app.launcher",
             "processId": 4592,
             "exited": false
-        },
-        {
-            "deviceId": "R5CR1249ZMY",
-            "name": "com.thunderzone.eye",
-            "processId": 4675,
-            "exited": true
         },
         {
             "deviceId": "R5CR1249ZMY",
@@ -72,6 +66,18 @@
             "deviceId": "R5CR1249ZMY",
             "name": "com.thunderzone.eye",
             "processId": 18757,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 10409,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1249ZMY",
+            "name": "com.thunderzone.eye",
+            "processId": 13677,
             "exited": false
         },
         {
